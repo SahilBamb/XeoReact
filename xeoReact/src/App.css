@@ -1,0 +1,14 @@
+.item, .pet{
+  padding: 10px;
+  border-style: solid;
+  width: 140px;
+  height: 150px;
+}
+
+.activeItem {
+  background-color: green;
+}
+
+p {
+  display: grid;
+}
