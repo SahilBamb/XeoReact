@@ -1,9 +1,7 @@
 import {useState, useEffect} from "react"
 import {v4 as uuid} from "uuid";
-
 import Pet from './Pet'
 import Item from './Item'
-
 export default function Profile() {
 
     const [pets, setPets] = useState(
@@ -13,9 +11,7 @@ export default function Profile() {
     );
 
     const [items, setItems] = useState(
-        [{id: uuid(), name:"Paintbrush", color: "Zombie"},
-        {id: uuid(), name:"Paintbrush", color: "Angel"},
-        {id: uuid(), name:"Paintbrush", color: "Labrat"},
+        [{id: uuid(), name:"Booster"},
         {id: uuid(), name:"Equip", effect: 2}]
     );
 
@@ -31,9 +27,13 @@ export default function Profile() {
         if (activeItem === null) 
             {console.log("No Item");}
         else if (activeItem.item === "Paintbrush") {
+            var itemUsed = false;
             setPets(
                 pets.map((e) => {
                     if (e.id === id) {
+                        console.log("Species " + e.species + " Color of item " + activeItem.color);
+                        if (e.color === activeItem.color) {return e;}
+                        else {itemUsed = true;}
                         return {...e, color: activeItem.color}
                     }
                 else {
@@ -41,9 +41,10 @@ export default function Profile() {
                 }
                 }))
 
-            const itemID = activeItem.id;
-            setActiveItem(null)
-            setItems(items.filter(e => e.id !== itemID))
+            if (itemUsed) {
+                setActiveItem(null)
+                setItems(items.filter(e => e.id !== activeItem.id))
+            }
         }
         else if (activeItem.item === "Equip") {
             console.log("Equipped Item")
@@ -56,14 +57,10 @@ export default function Profile() {
                     return e;
                 }
                 }))
+            
+                setActiveItem(null)
+                setItems(items.filter(e => e.id !== activeItem.id))
 
-            const itemID = activeItem.id;
-            setActiveItem(null)
-            setItems(items.filter(e => e.id !== itemID))
-
-        }
-        else if (activeItem.item === "Boost") {
-            console.log("Added Boost")
         }
     }
 
@@ -79,7 +76,12 @@ export default function Profile() {
 
         }
         else if (item === "Booster") {
-
+            console.log("Opened Booster Pack");
+            let newItems = items.filter(e => e.id !== id);
+            newItems = [...newItems, 
+                {id: uuid(), name:"Paintbrush", color: "Mushroom"},
+                {id: uuid(), name:"Paintbrush", color: "Vanilla"}]
+            setItems(newItems)
         }
     }
 

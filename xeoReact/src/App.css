@@ -2,7 +2,7 @@
   padding: 10px;
   border-style: solid;
   width: 140px;
-  height: 150px;
+  height: 300px;
 }
 
 .activeItem {
@@ -11,4 +11,9 @@
 
 p {
   display: grid;
+}
+
+.petProfile {
+  width: 100px;
+  height: 100px;
 }
