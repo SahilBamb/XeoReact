@@ -11,7 +11,7 @@ export default function Profile() {
     );
 
     const [items, setItems] = useState(
-        [{id: uuid(), name:"Booster"},
+        [{id: uuid(), name:"Booster", sleeve:"Clover"},
         {id: uuid(), name:"Equip", effect: 2}]
     );
 
@@ -104,6 +104,7 @@ export default function Profile() {
                 <Item
                     className = {(activeItem !== null && e.id === activeItem.id) ? "item activeItem" : "item"}
                     key = {e.id}
+                    sleeve = {e.sleeve}
                     onClick = {() => pickupItem(e.id,e.name,e.color,e.effect)}
                     name={e.name}
                     color={e.color}
