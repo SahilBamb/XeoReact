@@ -16,7 +16,6 @@ export default function Pokemon({id=0,
             <p>{pokemon.species}</p>
             <p>{pokemon.HP}</p>
             <img src={pokemon.img}></img>
-            
         </div>
     )
 }

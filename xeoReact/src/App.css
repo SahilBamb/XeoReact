@@ -22,3 +22,93 @@ p {
   width: 100px;
   height: 100px;
 }
+
+.moneyHeader {
+  border: solid black;
+}
+
+.moneyHeader .moneyText{
+  text-align: center;
+}
+
+.storeKeeperCard {
+  display: flex;
+  flex-direction: column; /* Stacking the divs vertically */
+  align-items: center; /* Centering horizontally */
+  height: 300px; /* Set a height for the container (optional) */
+  border: 1px solid #000;
+}
+
+.storeKeeperImage {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+}
+
+.dialog {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  padding: 10px;
+
+}
+
+.dialog .text {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white; 
+  font-family: "Courier";
+  font-size: 12px;
+  margin: 10px 0 0 10px;
+  overflow-wrap: normal;
+  overflow: hidden;
+  width: 290px;
+  text-align:justify;
+}
+
+.dialog .text:hover {
+  color:rgba(198, 61, 61, 0.941);
+}
+
+.storeItem:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.storeItem {
+  flex-direction: column;
+  display: inline-flex;
+  width: 100px;
+  height: 200px;
+  border-style: solid;
+  margin: 10px;
+}
+
+.storeItem p {
+  font-size: 10px;
+  background-color: aquamarine;
+  border: solid black;
+  overflow-wrap: normal;
+  overflow: hidden;
+}
+
+.store-image {
+  display: block; /* Make the image a block-level element */
+  max-width: 100px; /* Optional: Adjust the image size as needed */
+  max-height: 100px; /* Optional: Adjust the image size as needed */
+}
+
+.hovercard { 
+  position: absolute; 
+  opacity: 0; 
+  z-index: 1;
+  left: 50%;
+  top: -90px;
+  transform: translateX(-50%);
+}
+
+.recent-link:hover .hovercard { 
+  opacity: 1; 
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
