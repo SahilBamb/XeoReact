@@ -1,0 +1,95 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Barlow:700");
+
+@font-face {
+  font-family: "AdigianaUltra";
+  src: url('./fonts/adigianaultra.ttf');
+}
+
+
+@font-face {
+  font-family: "DogicaPixel";
+  src: url('./fonts/dogicapixel.ttf');
+}
+
+@font-face {
+font-family: "MaplestoryBold";
+src: url('./fonts/MaplestoryBold.ttf');
+}
+
+
+@font-face {
+  font-family: "Minecraftia-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("static/fonts/Minecraftia-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("static/fonts/Arial regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arial-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("static/fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
+}
+
+:root { 
+  --black: #000000;
+  --corn: #e9bc05;
+  --white: #ffffff;
+ 
+  --font-size-l: 7px;
+  --font-size-m: 6px;
+  --font-size-s: 5px;
+  --font-size-xl: 8px;
+  --font-size-xxl: 10px;
+  --font-size-xxxl: 25px;
+ 
+  --font-family-arial-bold: "Arial-Bold", Helvetica;
+  --font-family-arial-regular: "Arial-Regular", Helvetica;
+  --font-family-barlow: "Barlow", Helvetica;
+  --font-family-minecraftia-regular: "Minecraftia-Regular", Helvetica;
+}
+
+.minecraftia-regular-normal-white-6px {
+  color: var(--white);
+  font-family: var(--font-family-minecraftia-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.minecraftia-regular-normal-white-5px {
+  color: var(--white);
+  font-family: var(--font-family-minecraftia-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.minecraftia-regular-normal-corn-6px {
+  color: var(--corn);
+  font-family: var(--font-family-minecraftia-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+  
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+li {
+  padding: 20px;
+  display: inline-block;
+}

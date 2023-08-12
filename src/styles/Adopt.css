@@ -1,0 +1,64 @@
+@import "globals.css";
+
+/* :root {
+    background-image: url("../assets/static/img/OldRusticTown.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+} */
+
+
+.petIcon {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px #000;
+}
+
+.inactive {
+    filter: grayscale(100%);
+}
+
+.AdoptPetsCase {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20%;
+    box-shadow: 0 0 10px 5px #000;
+}
+
+.petIcon:hover {
+    transform: scale(1.1);
+}
+
+.AdoptPetCard {
+    
+
+}
+
+.petIconName {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #000;
+    position: relative;
+    font: 30px "adigianaultra", sans-serif;
+    bottom: 20px;
+
+}
+

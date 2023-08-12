@@ -1,0 +1,211 @@
+@import "../globals.css";
+
+.expand-button {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    background-color: #ffcc03;
+    border: 3px solid black;
+    width: 36px;
+    height: 40px;
+}
+
+.expand-button:hover {
+    background-color: #ffe375;
+}
+
+.fa-plus {
+    font-size: 40px;
+}
+
+.shrink-position {
+    position: absolute;
+    left: -200px;
+}
+
+.expand-position {
+    position: absolute;
+    left: 0px;
+}
+
+.mdd-horizontal {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffcc03;
+    width: 10000px;
+    height: 90px;
+    border-bottom: 3px solid black;
+}
+
+.mdd-divider {
+    position: absolute;
+    z-index: 2;
+    background-color: #ffcc03;
+    width: 30px;
+    height: 90px;
+    left: 190px;
+}
+
+.mdd {
+    transition: left .25s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffcc03;
+    width: 200px;
+    height: 100%;
+    border-right: 3px solid black;
+    border-bottom-right-radius: 1em;
+    border-bottom: 3px solid black;
+}
+
+#Title {
+    font-size: 60px;
+    margin-top: 10px;
+    text-shadow: white 0px 0px 10px;
+}
+
+#Star {
+    position: absolute;
+    color: black;
+    font-size: 10px;
+    top: 35px;
+    left: 5px;
+    transform: rotate(180deg);
+    transform: skew(20deg, 10deg);
+    text-shadow: white 0px 0px 10px;
+}
+
+#Star-2 {
+    position: absolute;
+    color: black;
+    font-size: 10px;
+    transform: rotate(200deg);
+    transform: skew(-30deg, 40deg);
+    top: 22px;
+    left: 35px;
+    text-shadow: white 0px 0px 10px;
+}
+
+#Star-3 {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    transform: rotate(180deg);
+    top: 15px;
+    left: 60px;
+    transform: skew(20deg, 5deg);
+    text-shadow: white 0px 0px 10px;
+}
+
+.xeopet {
+    position: relative;
+    left: 20px;
+    font-size: 40px;
+    top: -15px;
+}
+
+#oval {
+    position: absolute;
+    z-index: -1;
+    right: 20px;
+    top: 90px;
+    width: 150px;
+    height: 75px;
+    background: #f8fc61;
+    transform: rotate(160deg);
+    border-radius: 100px / 50px;
+  }
+
+#oval2 {
+    position: absolute;
+    z-index: -1;
+    right: 20px;
+    top: 200px;
+    width: 150px;
+    height: 75px;
+    background: #f8fc61;
+    transform: rotate(190deg);
+    border-radius: 100px / 50px;
+}
+
+#PetCentralText {
+    margin-top: 10px;
+    font-size: 34px;
+}
+
+.fa-caret-right {
+    font-size: 50px;
+    color: orange;
+}
+
+.fa-caret-left {
+    font-size: 50px;
+    color: orange;
+}
+
+
+.menu-bar {
+    z-index: 1;
+    text-align: center;
+    font: 30px "adigianaultra", sans-serif;
+    margin: 15px;
+}
+
+.menu-bar:hover .icon {
+    transform: rotate(-20deg);
+}
+
+.fa-egg {
+    position: absolute;
+    top: 125px;
+    right: 130px;
+    font-size: 50px;
+}
+
+.pdd .card-background{
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    left: 500px;
+    background-color: rgba(0,0,0,0.4);
+    width: 200px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.pdd .card {
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.pdd .expand {
+    position: absolute;
+    bottom: -20px;
+    background-color: red;
+    padding-top: 2px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    font-family: "DogicaPixel", sans-serif;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.login {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    font-size: 35px;
+    padding-bottom: 10px
+}
+
+.logout {
+    position: absolute;
+    bottom: -15px;
+    right: 40px;
+    font-size: 35px;
+    padding-bottom: 10px;
+}

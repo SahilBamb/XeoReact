@@ -1,0 +1,145 @@
+.bumble {
+  align-items: flex-start;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(52, 65, 71) 25%, rgb(255, 186, 0) 87.5%);
+  background-color: rgba(255,255,255,1.0);
+  border: 1px none;
+  display: flex;
+  height: 982px;
+  width: 1512px;
+}
+
+.overlap-group7 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 962px;
+  margin-top: 20px;
+  position: relative;
+  width: 1512px;
+}
+
+.card-trtl {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 208px;
+  min-height: 709px;
+  position: absolute;
+  top: 170px;
+  width: 1068px;
+}
+
+.overlap-group6 {
+  height: 204px;
+  position: relative;
+  width: 282px;
+}
+
+.header {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: auto;
+  justify-content: flex-start;
+  left: 0;
+  min-height: 204px;
+  position: absolute;
+  top: 0;
+  width: 282px;
+}
+
+.main-heading-text {
+  color: var(--white);
+  font-family: var(--font-family-metropolis-black);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 92px;
+  width: 278px;
+}
+
+.lorem-ipsum-is-simpl {
+  color: var(--white);
+  font-family: var(--font-family-mclaren);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 84px;
+  width: 278px;
+}
+
+.line {
+  height: 3px;
+  left: 2px;
+  position: absolute;
+  top: 189px;
+  width: 253px;
+}
+
+.flex-row {
+  align-items: flex-end;
+  display: flex;
+  gap: 143px;
+  height: 493px;
+  min-width: 1072px;
+  position: relative;
+}
+
+.buttons_trtl {
+  align-items: flex-start;
+  display: flex;
+  gap: 27px;
+  margin-bottom: 0;
+  min-width: 634px;
+}
+
+.overlap-group1 {
+  align-items: flex-start;
+  border: 2px solid;
+  border-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  height: 48px;
+  min-width: 211px;
+  padding: 10px 63px;
+}
+
+.adopt-pet {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.overlap-group {
+  align-items: flex-end;
+  background-color: #eaab02;
+  border-radius: 20px;
+  display: flex;
+  height: 48px;
+  justify-content: flex-end;
+  min-width: 392px;
+  padding: 16.8px 139.3px;
+}
+
+.view-variants {
+  height: 14px;
+  width: 111px;
+}
+
+.turt_img {
+  height: 800px;
+  left: 626px;
+  object-fit: cover;
+  position: absolute;
+  top: 31px;
+  width: 800px;
+}
+

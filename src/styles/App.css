@@ -1,0 +1,17 @@
+/* adopt {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "content content content"
+        "footer footer footer";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 70px;
+    
+    align-items: center;
+    justify-items: center;
+}
+
+header { grid-area: header; }
+content { grid-area: content; }
+footer { grid-area: footer; } */

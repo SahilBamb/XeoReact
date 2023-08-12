@@ -1,0 +1,32 @@
+@import "globals.css";
+
+.idd .card-background{
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    width: 200px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.idd .card {
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.idd .expand {
+    position: absolute;
+    bottom: -20px;
+    background-color: red;
+    padding-top: 2px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    font-family: "DogicaPixel", sans-serif;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}

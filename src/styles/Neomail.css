@@ -1,0 +1,48 @@
+mail h4, h5{
+    margin: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+mail h4 {
+    font-size: 12px;
+}
+
+mail h5 {
+    font-size: 15px;
+}
+
+mail table, td {
+    border: 1px solid;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 2px;
+  }
+
+mail table {
+    border-collapse: collapse;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+mail th {
+    background-color: #ffcc03;
+    font-weight: bold;
+}
+
+
+
+
+mail tr:nth-child(odd) :not(th) {
+    background-color: lightgrey;
+ }
+
+.lastRow {
+    background-color: #ffcc03;
+    font-weight: bold;
+    height: 15px;
+    text-align: center;
+}

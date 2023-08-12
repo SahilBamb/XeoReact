@@ -1,0 +1,40 @@
+
+.container-pageTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pageTitle {
+    position: relative;
+    right: -140px;
+    height: 60px;
+    width: 500px;
+    /* background-color: lightblue; */
+    border: 5px solid #000;
+    border-radius: 1.5rem;
+    display: table-cell;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.pageTitle .title-text {
+    z-index: 2;
+    font: 50px "adigianaultra", sans-serif;
+    text-shadow: white 0px 0px 10px;
+}
+
+.pageSubTitle {
+    position: relative;
+    z-index: 3;
+    font: 90px "adigianaultra", sans-serif;
+    text-shadow: white 0px 0px 10px;
+    color: black;
+    top: -20px;
+    right: 220px;
+    opacity: 0.2;
+    margin-top: 20px;
+}
+
