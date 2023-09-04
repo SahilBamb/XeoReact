@@ -1,0 +1,296 @@
+.job-office-store {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.job-office-store .overlap-wrapper-10 {
+  background: linear-gradient(180deg, rgb(45, 82, 149) 1.46%, rgb(174, 114, 95) 99.99%);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px none;
+  height: 982px;
+  width: 1512px;
+}
+
+.job-office-store .overlap-41 {
+  height: 982px;
+  position: relative;
+}
+
+.job-office-store .black-city-banner-2 {
+  height: 76px;
+  left: 393px;
+  position: absolute;
+  top: 208px;
+  width: 262px;
+}
+
+.job-office-store .overlap-42 {
+  background-image: url(../../../static/img/middle-brown-banner-1.svg);
+  background-size: 100% 100%;
+  height: 76px;
+  position: relative;
+  width: 260px;
+}
+
+.job-office-store .text-wrapper-70 {
+  color: #fffff4;
+  font-family: "Teko", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  left: 15px;
+  letter-spacing: -2px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  width: 234px;
+}
+
+.job-office-store .subtitle-2 {
+  height: 21px;
+  left: 15px;
+  position: absolute;
+  top: 41px;
+  width: 168px;
+}
+
+.job-office-store .overlap-group-20 {
+  height: 21px;
+  position: relative;
+  width: 166px;
+}
+
+.job-office-store .text-wrapper-71 {
+  color: #bc9c83;
+  font-family: "Teko", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: 152px;
+}
+
+.job-office-store .square-2 {
+  background-color: #bc9c83;
+  height: 13px;
+  left: 152px;
+  position: absolute;
+  top: 7px;
+  width: 14px;
+}
+
+.job-office-store .circle-2 {
+  height: 25px;
+  left: 222px;
+  position: absolute;
+  top: 16px;
+  width: 25px;
+}
+
+.job-office-store .white-top-banner-3 {
+  height: 70px;
+  left: 393px;
+  position: absolute;
+  top: 117px;
+  transition: all 0.2s ease;
+  width: 1042px;
+}
+
+.job-office-store .overlap-43 {
+  height: 70px;
+  position: relative;
+  width: 1040px;
+}
+
+.job-office-store .white-background-2 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #a5a4a4;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 1040px;
+}
+
+.job-office-store .text-wrapper-72 {
+  color: #4a3d3b;
+  font-family: "Teko", Helvetica;
+  font-size: 60px;
+  font-weight: 600;
+  left: 75px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 588px;
+}
+
+.job-office-store .burger-icon-2 {
+  height: 48px;
+  left: 12px;
+  position: absolute;
+  top: 12px;
+  width: 50px;
+}
+
+.job-office-store .rectangle-18 {
+  background-color: #000000;
+  border-radius: 25px;
+  height: 116px;
+  left: 468px;
+  opacity: 0.4;
+  position: absolute;
+  top: 633px;
+  width: 509px;
+}
+
+.job-office-store .welcome-to-burger-2 {
+  color: #ffffff;
+  font-family: "Teko", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  left: 497px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 652px;
+}
+
+.job-office-store .background {
+  height: 965px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1512px;
+}
+
+.job-office-store .desk-2 {
+  height: 154px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 828px;
+  width: 1512px;
+}
+
+.job-office-store .image {
+  height: 711px;
+  left: 653px;
+  object-fit: cover;
+  position: absolute;
+  top: 117px;
+  width: 548px;
+}
+
+.job-office-store .black-city-banner-3 {
+  height: 72px;
+  left: 939px;
+  position: absolute;
+  top: 129px;
+  width: 289px;
+}
+
+.job-office-store .overlap-44 {
+  background-image: url(../../../static/img/middle-brown-banner-2.svg);
+  background-size: 100% 100%;
+  height: 72px;
+  position: relative;
+  width: 287px;
+}
+
+.job-office-store .text-wrapper-73 {
+  color: #fffff4;
+  font-family: "Teko", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  left: 13px;
+  letter-spacing: -2px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  width: 258px;
+}
+
+.job-office-store .subtitle-3 {
+  height: 21px;
+  left: 15px;
+  position: absolute;
+  top: 43px;
+  width: 168px;
+}
+
+.job-office-store .circle-3 {
+  height: 21px;
+  left: 254px;
+  position: absolute;
+  top: 20px;
+  width: 21px;
+}
+
+.job-office-store .white-top-banner-4 {
+  height: 79px;
+  left: 533px;
+  position: absolute;
+  top: 32px;
+  transition: all 0.2s ease;
+  width: 695px;
+}
+
+.job-office-store .overlap-45 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #a5a4a4;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 79px;
+  left: 67px;
+  position: relative;
+  width: 626px;
+}
+
+.job-office-store .text-wrapper-74 {
+  color: #4a3d3b;
+  font-family: "Teko", Helvetica;
+  font-size: 60px;
+  font-weight: 600;
+  left: 142px;
+  letter-spacing: -1.8px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: -1px;
+  width: 463px;
+}
+
+.job-office-store .justice-icon {
+  height: 148px;
+  left: 610px;
+  position: absolute;
+  top: 6px;
+  width: 148px;
+}
+
+.job-office-store .item-box-3 {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  box-shadow: 0px 4px 50px 20px #0000009e;
+  height: 172px;
+  left: 151px;
+  opacity: 0.8;
+  position: absolute;
+  top: 181px;
+  width: 475px;
+}

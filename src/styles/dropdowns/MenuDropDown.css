@@ -1,16 +1,16 @@
 @import "../globals.css";
 
-.expand-button {
+.ddexpand-button {
     position: absolute;
     top: 400px;
-    left: 200px;
+    left: 197px;
     background-color: #ffcc03;
     border: 3px solid black;
-    width: 36px;
-    height: 40px;
+    width: 40px;
+    height: 45px;
 }
 
-.expand-button:hover {
+.ddexpand-button:hover {
     background-color: #ffe375;
 }
 
@@ -42,7 +42,7 @@
     z-index: 2;
     background-color: #ffcc03;
     width: 30px;
-    height: 90px;
+    height: 87px;
     left: 190px;
 }
 

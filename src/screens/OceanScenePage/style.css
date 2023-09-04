@@ -1,0 +1,416 @@
+.ocean-scene-page {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.ocean-scene-page .overlap-wrapper-3 {
+  background: linear-gradient(
+    180deg,
+    rgb(32, 98, 153) 0%,
+    rgb(46, 144, 188) 21.35%,
+    rgb(210, 183, 203) 33.85%,
+    rgb(225, 239, 207) 46.88%,
+    rgb(119, 188, 198) 60.42%,
+    rgb(46, 77, 129) 78.65%,
+    rgb(57, 104, 151) 100%
+  );
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px none;
+  height: 982px;
+  width: 1512px;
+}
+
+.ocean-scene-page .overlap-11 {
+  height: 905px;
+  left: 170px;
+  position: relative;
+  width: 1217px;
+}
+
+.ocean-scene-page .gere-leng-summa {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  left: 127px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 133px;
+}
+
+.ocean-scene-page .rectangle {
+  background: linear-gradient(
+    180deg,
+    rgb(217, 217, 217) 0%,
+    rgba(217, 217, 217, 0.44) 60.94%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-radius: 40px;
+  height: 232px;
+  left: 65px;
+  opacity: 0.5;
+  position: absolute;
+  top: 673px;
+  width: 193px;
+}
+
+.ocean-scene-page .rectangle-2 {
+  background: linear-gradient(
+    180deg,
+    rgb(217, 217, 217) 0%,
+    rgba(217, 217, 217, 0.44) 60.94%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-radius: 40px;
+  height: 232px;
+  left: 277px;
+  opacity: 0.5;
+  position: absolute;
+  top: 673px;
+  width: 193px;
+}
+
+.ocean-scene-page .rectangle-3 {
+  background: linear-gradient(
+    180deg,
+    rgb(217, 217, 217) 0%,
+    rgba(217, 217, 217, 0.44) 60.94%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-radius: 40px;
+  height: 232px;
+  left: 489px;
+  opacity: 0.5;
+  position: absolute;
+  top: 673px;
+  width: 193px;
+}
+
+.ocean-scene-page .rectangle-4 {
+  background: linear-gradient(
+    180deg,
+    rgb(217, 217, 217) 0%,
+    rgba(217, 217, 217, 0.44) 60.94%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-radius: 40px;
+  height: 232px;
+  left: 701px;
+  opacity: 0.5;
+  position: absolute;
+  top: 673px;
+  width: 193px;
+}
+
+.ocean-scene-page .rectangle-5 {
+  background: linear-gradient(
+    180deg,
+    rgb(217, 217, 217) 0%,
+    rgba(217, 217, 217, 0.44) 60.94%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  border-radius: 40px;
+  height: 232px;
+  left: 913px;
+  opacity: 0.5;
+  position: absolute;
+  top: 673px;
+  width: 193px;
+}
+
+.ocean-scene-page .rectangle-6 {
+  height: 705px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1217px;
+}
+
+.ocean-scene-page .text-wrapper-18 {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 25px;
+  font-weight: 800;
+  left: 127px;
+  letter-spacing: -1.25px;
+  line-height: normal;
+  position: absolute;
+  top: 79px;
+  white-space: nowrap;
+}
+
+.ocean-scene-page .rectangle-7 {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 127.66, 162.56, 0.2) 0%,
+    rgba(11.98, 67.72, 130.69, 0.2) 47.29%,
+    rgba(0, 29.1, 62.69, 0.2) 100%
+  );
+  border-radius: 0px 0px 0px 25px;
+  box-shadow: 0px 10px 30px 3px #000000;
+  height: 248px;
+  left: 823px;
+  position: absolute;
+  top: 6px;
+  width: 295px;
+}
+
+.ocean-scene-page .rectangle-8 {
+  background: linear-gradient(
+    180deg,
+    rgb(96, 128, 185) 0%,
+    rgb(85, 117, 178) 38.02%,
+    rgb(151, 135, 187) 75.52%,
+    rgb(212, 165, 184) 98.96%
+  );
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px 3px #000000;
+  height: 85px;
+  left: 473px;
+  opacity: 0.7;
+  position: absolute;
+  top: 491px;
+  width: 232px;
+}
+
+.ocean-scene-page .flexcontainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 36px;
+  left: 486px;
+  position: absolute;
+  top: 514px;
+  width: 205px;
+}
+
+.ocean-scene-page .text {
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Dogica Pixel-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.ocean-scene-page .span {
+  color: #ffffff;
+  font-family: "Dogica Pixel-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+}
+
+.ocean-scene-page .text-wrapper-19 {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 23px;
+  font-weight: 800;
+  left: 846px;
+  letter-spacing: -1.15px;
+  line-height: normal;
+  position: absolute;
+  top: 80px;
+  white-space: nowrap;
+}
+
+.ocean-scene-page .lorem-ipsum-is {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 849px;
+  letter-spacing: -0.6px;
+  line-height: normal;
+  position: absolute;
+  top: 129px;
+}
+
+.ocean-scene-page .text-wrapper-20 {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 111px;
+  letter-spacing: -0.7px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 125px;
+  width: 134px;
+}
+
+.ocean-scene-page .rectangle-9 {
+  background-color: #000000;
+  border-radius: 12px;
+  height: 32px;
+  left: 849px;
+  opacity: 0.4;
+  position: absolute;
+  top: 200px;
+  width: 200px;
+}
+
+.ocean-scene-page .rectangle-10 {
+  background-color: #6bcf99;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 12px;
+  height: 32px;
+  left: 849px;
+  position: absolute;
+  top: 200px;
+  width: 60px;
+}
+
+.ocean-scene-page .group {
+  height: 52px;
+  left: 885px;
+  opacity: 0.45;
+  position: absolute;
+  top: 6px;
+  width: 234px;
+}
+
+.ocean-scene-page .overlap-group-6 {
+  height: 52px;
+  position: relative;
+}
+
+.ocean-scene-page .rectangle-11 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #121212;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-radius: 0px 0px 0px 5px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  height: 52px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.ocean-scene-page .rectangle-12 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #121212;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  height: 52px;
+  left: 63px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.ocean-scene-page .rectangle-13 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #121212;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  height: 52px;
+  left: 126px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.ocean-scene-page .rectangle-14 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #121212;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  height: 52px;
+  left: 189px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 45px;
+}
+
+.ocean-scene-page .text-wrapper-21 {
+  color: #ffffff;
+  font-family: "Sen", Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  left: 843px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+}
+
+.ocean-scene-page .text-wrapper-22 {
+  color: #ffffff;
+  font-family: "Sen", Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  left: 906px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+}
+
+.ocean-scene-page .text-wrapper-23 {
+  color: #ffffff;
+  font-family: "Sen", Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  left: 966px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+}
+
+.ocean-scene-page .text-wrapper-24 {
+  color: #ffffff;
+  font-family: "Sen", Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  left: 1029px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+}
+
+.ocean-scene-page .rectangle-15 {
+  border: 3px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(209.31, 138.11, 72.39), rgb(234.81, 205.23, 49.9)) 1;
+  border-radius: 50px;
+  height: 49px;
+  left: 561px;
+  position: absolute;
+  top: 27px;
+  width: 49px;
+}

@@ -1,0 +1,213 @@
+.profile-page {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-page .overlap-group-wrapper-2 {
+  background: linear-gradient(180deg, rgb(65.89, 72.24, 106.13) 0%);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px none;
+  height: 982px;
+  overflow: hidden;
+  width: 1512px;
+}
+
+.profile-page .overlap-group-13 {
+  height: 991px;
+  left: 210px;
+  position: relative;
+  width: 1038px;
+}
+
+.profile-page .main-card-body {
+  background-color: #222a4f;
+  box-shadow: 0px 4px 50px 40px #00000040;
+  height: 982px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1038px;
+}
+
+.profile-page .bottom-left-line {
+  height: 3px;
+  left: 335px;
+  position: absolute;
+  top: 731px;
+  width: 653px;
+}
+
+.profile-page .left-card-body {
+  background: linear-gradient(
+    180deg,
+    rgb(26, 30, 48) 2.6%,
+    rgb(63, 64, 88) 19.76%,
+    rgb(33, 35, 53) 49.48%,
+    rgb(33, 34, 51) 100%
+  );
+  box-shadow: 0px 4px 20px 10px #00000040;
+  height: 982px;
+  left: 34px;
+  opacity: 0.5;
+  position: absolute;
+  top: 9px;
+  width: 276px;
+}
+
+.profile-page .bottom-square-button {
+  background: linear-gradient(180deg, rgba(155.42, 154.12, 218.88, 0.44) 0%);
+  border: 1px solid;
+  border-color: #a5a7d0;
+  border-radius: 7px;
+  box-shadow: 0px 0px 40px 14px #00000040;
+  height: 165px;
+  left: 368px;
+  position: absolute;
+  top: 767px;
+  width: 165px;
+}
+
+.profile-page .bottom-square-button-2 {
+  background: linear-gradient(180deg, rgba(155.42, 154.12, 218.88, 0.44) 0%);
+  border: 1px solid;
+  border-color: #a5a7d0;
+  border-radius: 7px;
+  box-shadow: 0px 0px 40px 14px #00000040;
+  height: 165px;
+  left: 579px;
+  position: absolute;
+  top: 767px;
+  width: 165px;
+}
+
+.profile-page .bottom-square-button-3 {
+  background: linear-gradient(180deg, rgba(155.42, 154.12, 218.88, 0.44) 0%);
+  border: 1px solid;
+  border-color: #a5a7d0;
+  border-radius: 7px;
+  box-shadow: 0px 0px 40px 14px #00000040;
+  height: 165px;
+  left: 790px;
+  position: absolute;
+  top: 769px;
+  width: 165px;
+}
+
+.profile-page .group-2 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 821px;
+  width: 219px;
+}
+
+.profile-page .image-text {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 10px;
+  font-weight: 200;
+  left: 105px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 4px 10px #00000040;
+  top: 26px;
+  width: 110px;
+}
+
+.profile-page .image-title {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  left: 130px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 10px #00000040;
+  top: 0;
+  white-space: nowrap;
+}
+
+.profile-page .bottom-square-button-4 {
+  background: linear-gradient(180deg, rgb(69, 89, 136) 0%);
+  border: 1px solid;
+  border-color: #3e3f56;
+  border-radius: 7px;
+  box-shadow: inset 0px 0px 20px 14px #00000040;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.profile-page .group-3 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 708px;
+  width: 219px;
+}
+
+.profile-page .group-4 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 595px;
+  width: 219px;
+}
+
+.profile-page .group-5 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 482px;
+  width: 219px;
+}
+
+.profile-page .group-6 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 379px;
+  width: 219px;
+}
+
+.profile-page .group-7 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 266px;
+  width: 219px;
+}
+
+.profile-page .group-8 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 153px;
+  width: 219px;
+}
+
+.profile-page .group-9 {
+  height: 86px;
+  left: 58px;
+  position: absolute;
+  top: 40px;
+  width: 219px;
+}
+
+.profile-page .main-image {
+  background-color: #d9d9d9;
+  height: 678px;
+  left: 335px;
+  opacity: 0.4;
+  position: absolute;
+  top: 30px;
+  width: 674px;
+}

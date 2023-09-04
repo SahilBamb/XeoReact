@@ -1,0 +1,21 @@
+@import "globals.css";
+
+.ep-container {
+    background-size:100% 100%;
+}
+
+.store-content {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/static/img/ConvStore.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.item-case-conv {
+    position: relative;
+    left: 200px;
+}

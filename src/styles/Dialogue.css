@@ -1,0 +1,27 @@
+@import "globals.css";
+
+.DialogueBox {
+  position: absolute;
+  width: 400px;
+  height: 70px;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 15px;
+  left: 100px;
+  bottom: 40px;
+  text-align: justify;
+}
+
+.DialogueBoxText {
+    color: white;
+    font-size: 15px;
+    font-family: 'DogicaPixel';
+    padding: 10px;
+}
+
+.DialogueBoxText::selection {
+    background: transparent;
+}
+
+.DialogueBoxText:hover {
+    color: lightgray;
+}

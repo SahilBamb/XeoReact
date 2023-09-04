@@ -18,9 +18,9 @@ export default function MenuDropDown({setPage}){
     return (
         <>
             {/* <div class="mdd-horizontal"></div>
-            <div className="mdd-divider"> </div> */}
+            {menuState=="mdd expand-position" && <div className="mdd-divider"> </div>} */}
             <div class={menuState} onClick={expandMenu}>
-                <div className="expand-button">
+                <div className="ddexpand-button">
                     <i className="fa-solid fa-plus"></i>
                 </div>
                 <div className="logo">
@@ -60,14 +60,14 @@ export default function MenuDropDown({setPage}){
                     <div className="icon fa-solid fa-stroopwafel" /> stuff</div>
                 <div class="menu-bar" onClick={() => {setPage("Profile");}}>
                     <div className="icon fa-solid fa-clipboard-question" /> profile</div>
-                <div class="login menu-bar">
+                {/* <div class="login menu-bar">
                     login
                     <i class="icon fa-solid fa-caret-right"></i> 
                 </div>
                 <div class="logout menu-bar">
                     <i class="icon fa-solid fa-caret-left"></i>
                     logout
-                </div>
+                </div> */}
             </div>
         </>
     );
