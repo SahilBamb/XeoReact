@@ -1,9 +1,24 @@
+.ep-container {
+    position: absolute;
+    left: 1000px;
+    top: 140px;
+}
+.ep-item-case {
+    position: absolute;
+    z-index: 1;
+    /* height: 530px;
+    width: 400px; */
+    min-width: 400px;
+    background-color: rgb(255,255,255,0.7);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgb(0,0,0,0.7);
+}
 
 .refresh-button {
     position: absolute;
     z-index: 2;
-    right: 300px;
-    bottom: 50px;
+    right: 0px;
+    bottom: -72px;
     height: 50px;
     width: 50px;
     background-color: rgb(200,250,250,0.7);
@@ -27,17 +42,6 @@
     color: rgb(0,0,0,0.7);
 }
 
-.ep-item-case {
-    position: absolute;
-    z-index: 1;
-    right: 300px;
-    bottom: 120px;
-    height: 530px;
-    width: 400px;
-    background-color: rgb(255,255,255,0.7);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 10px rgb(0,0,0,0.7);
-}
 
 .ep-item-case {
     display: flex;
@@ -46,7 +50,6 @@
     border: solid black;
     justify-content: center;
 }
-
 
 .ep-item-case .box{
     z-index: 2;
@@ -62,13 +65,14 @@
     visibility: hidden;
 }
 
+/* Restocking */
 .loading-dots{
-    position: relative;
+    position: absolute;
     z-index: 3;
     height: 30px;
     width: 100px;
-    right: 20px;
-    top: 34px;
+    right: 140px;
+    bottom: -63px;
     font-family: "DogicaPixel", sans-serif;
     opacity: 0.7;
     display: flex;

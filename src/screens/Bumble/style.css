@@ -1,21 +1,23 @@
 .bumble {
-  background-color: rgba(255, 255, 255, 1);
+  background: radial-gradient(50% 50% at 50% 50%, rgb(52, 65, 71) 25%, rgb(255, 186, 0) 87.5%);
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
+.petPage-Adopt:active {
+  transform: translate(0, 2px);
+}
+
 .bumble .overlap-wrapper-8 {
-  background: radial-gradient(50% 50% at 50% 50%, rgb(52, 65, 71) 25%, rgb(255, 186, 0) 87.5%);
-  background-color: rgba(255, 255, 255, 1);
   border: 1px none;
   height: 982px;
   width: 1512px;
 }
 
 .bumble .overlap-32 {
-  background-image: url(../../../static/img/main-rectangle-card-trtl-1.png);
+  background-image: url(/img/main-rectangle-card-trtl-1.png);
   background-position: 50% 50%;
   background-size: cover;
   height: 962px;

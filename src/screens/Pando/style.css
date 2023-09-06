@@ -1,5 +1,5 @@
 .pando {
-  background-color: rgba(255, 255, 255, 1);
+  background: conic-gradient(from 180deg at 50% 50%, rgb(236, 206, 112) 125.63deg, rgb(228, 143, 68) 333.51deg);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,8 +7,6 @@
 }
 
 .pando .overlap-wrapper-4 {
-  background: conic-gradient(from 180deg at 50% 50%, rgb(236, 206, 112) 125.63deg, rgb(228, 143, 68) 333.51deg);
-  background-color: rgba(255, 255, 255, 1);
   border: 1px none;
   height: 982px;
   width: 1512px;

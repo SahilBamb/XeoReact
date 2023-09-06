@@ -37,10 +37,15 @@ export default function ItemCase({items, setItems, setPage, posStoreInventory}) 
     return (
         <content className="ep-container">
             <div className="ep-map">
-                <div className={loadingDots.visibility==="hidden" ? "refresh-button" : "refresh-button spinning"} onClick={refreshInventory}>
-                    <i class="fa fa-refresh refresh-text" aria-hidden="true"></i>
-                </div>
+                
                 <div className="ep-item-case">
+                    <div className={loadingDots.visibility==="hidden" ? "refresh-button" : "refresh-button spinning"} onClick={refreshInventory}>
+                        <i class="fa fa-refresh refresh-text" aria-hidden="true"></i>
+                    </div>
+                    <div className="loading-dots"
+                            style={loadingDots}>RESTOCKING</div>
+                    <div className="loading-bar"></div>
+                    <div className="loading-bar-loading"></div>
                     {[...storeInventory].map((e, i) => {
                         var finalImage = `https://raw.githubusercontent.com/SahilBamb/XeoReact/ImageStore/Item/${e.type}/${e.details}.png`;
                         var style = { 
@@ -57,10 +62,7 @@ export default function ItemCase({items, setItems, setPage, posStoreInventory}) 
                             </div>
                                 );
                     })};
-                    <div className="loading-dots"
-                            style={loadingDots}>RESTOCKING</div>
-                    <div className="loading-bar"></div>
-                    <div className="loading-bar-loading"></div>
+                    
                 </div>
             </div>
         </content>

@@ -14,7 +14,7 @@ export default function Store({items, setItems, setPage}){
         details : "Mushroom",
         description : {"Cost" : 9999, 
                     "Description" : "A magical potion gives your pet a penchant for shrooms."},
-        rarity : 5,}];
+        rarity : 2,}];
     
     return (
         <store>

@@ -1,7 +1,24 @@
 import React from "react";
+import {useState} from "react";
 import "./style.css";
+import Stats from "./../partials/StatsScreen/Stats";
 
-export const Nervish = () => {
+export const Nervish = ({pets, setPets, setPage}) => {
+
+  const pet = {
+    species : "Nervish",
+    color : "Vanilla",
+    available : true
+  };
+
+  const [stats, setStats] = useState({
+    fitness: 3,
+    happiness: 3,
+    goodness: 3,
+    adventurousness: 3,
+    socialness: 3,
+  });
+
   return (
     <div className="nervish">
       <div className="overlap-wrapper">
@@ -10,8 +27,14 @@ export const Nervish = () => {
           <div className="card-NVSH">
             <div className="buttons-NVSH">
               <div className="left-button-NVSH">
-                <div className="overlap-group-2">
-                  <div className="text-wrapper-3">Adopt Pet</div>
+                <div className="petPage-Adopt overlap-group-2">
+                  <div 
+                  
+                    onClick = {() => { 
+                      setPets([...pets, {...pet}]); 
+                      setPage("Profile");
+                    }}
+                    className="text-wrapper-3">Adopt Pet</div>
                 </div>
               </div>
               <div className="right-button-NVSH">
@@ -31,44 +54,7 @@ export const Nervish = () => {
               </header>
               <img className="line" alt="Line" src="/img/line.svg" />
             </div>
-            <div className="stats-screen">
-              <div className="randomize-button">
-                <div className="overlap-group-3">
-                  <div className="text-wrapper-5">Randomize</div>
-                  <img className="six-sided-dice" alt="Six sided dice" src="/img/six-sided-dice-1.svg" />
-                </div>
-              </div>
-              <div className="happiness-badge">
-                <div className="overlap-4">
-                  <div className="text-wrapper-6">Happiness</div>
-                  <div className="text-wrapper-7">9</div>
-                </div>
-              </div>
-              <div className="adventurousness">
-                <div className="overlap-5">
-                  <div className="text-wrapper-8">Adventur-ousness</div>
-                  <div className="text-wrapper-7">9</div>
-                </div>
-              </div>
-              <div className="goodness-badge">
-                <div className="overlap-4">
-                  <div className="text-wrapper-6">Goodness</div>
-                  <div className="text-wrapper-7">9</div>
-                </div>
-              </div>
-              <div className="happiness-badge-2">
-                <div className="overlap-4">
-                  <div className="text-wrapper-6">Happiness</div>
-                  <div className="text-wrapper-7">9</div>
-                </div>
-              </div>
-              <div className="fitness-badge">
-                <div className="overlap-4">
-                  <div className="text-wrapper-9">Fitness</div>
-                  <div className="text-wrapper-7">9</div>
-                </div>
-              </div>
-            </div>
+            <Stats buttonColor={"#c2aef8"} stats={stats} setStats={setStats}/>
           </div>
           <img className="nervish-img" alt="Nervish img" src="/img/nervish-img.png" />
         </div>

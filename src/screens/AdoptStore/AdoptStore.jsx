@@ -1,7 +1,65 @@
 import React from "react";
 import "./style.css";
 
-export const AdoptStore = () => {
+const possiblePets = [
+  {species : "Birbeak",
+  color : "Vanilla",
+  available : true},
+
+  {species : "Bumble",
+  color : "Vanilla",
+  available : true},
+
+  // {species : "Bunni",
+  // color : "Vanilla",
+  // available : true},
+
+  {species : "Draco",
+  color : "Vanilla",
+  available : true},
+
+  // {species : "Foxi",
+  // color : "Vanilla",
+  // available : true},
+
+  {species : "Gryphon",
+  color : "Vanilla",
+  available : false},
+
+  // {species : "Izzard",
+  // color : "Vanilla",
+  // available : true},
+
+  // {species : "Kitti",
+  // color : "Vanilla",
+  // available : false},
+
+  {species : "Nervish",
+  color : "Vanilla",
+  available : false},
+
+  {species : "Pando",
+  color : "Vanilla",
+  available : true},
+
+  {species : "Razortooth",
+  color : "Vanilla",
+  available : true},
+
+  {species : "Tigre",
+  color : "Vanilla",
+  available : false},
+
+  {species : "Turt",
+  color : "Vanilla",
+  available : false}
+]
+
+const availablePets = possiblePets.filter(pet => pet.available);
+const notAvailablePets = possiblePets.filter(pet => !pet.available);
+
+
+export const AdoptStore = ({pets, setPets, setPage}) => {
   return (
     <div className="adopt-store">
       <div className="action-card-wrapper">
@@ -19,10 +77,28 @@ export const AdoptStore = () => {
             </div>
             <div className="text-wrapper-54">Pets Available Next Month</div>
             <div className="bottom-boxes">
-              <div className="div-2" />
-              <div className="div-3" />
-              <div className="div-4" />
-              <div className="div-5" />
+              {notAvailablePets.map((pet,index) => {
+                const divName = "adopt-notAvailable div-" + (index+2);
+                const imgURL = "https://raw.githubusercontent.com/SahilBamb/XeoReact/ImageStore/Pet/" + pet.species + "/" + pet.color + ".png";
+                const imgURLFinal = 'url("' + imgURL + '")';
+
+                const divStyle = {
+                  opacity: pet.available ? 1 : 0.5,
+                  backgroundImage: imgURLFinal,
+                  backgroundSize: 'cover', // You can adjust this property to control how the image is displayed
+                };
+
+                return (
+                  <div 
+                    className={divName} 
+                    style={divStyle}
+                    onClick={() => {
+                      console.log(pet.species + " is not available for adoption!");
+                      setPage(pet.species);
+                      }}
+                    />
+                );
+              })}
             </div>
             <p className="text-wrapper-55">Exclusive Pets You Can’t Have (Yet)</p>
             <div className="middle-feature">
@@ -32,10 +108,32 @@ export const AdoptStore = () => {
               </p>
             </div>
             <div className="top-boxes">
-              <div className="div-2" />
-              <div className="div-3" />
-              <div className="div-4" />
-              <div className="div-5" />
+              {availablePets.map((pet,index) => {
+                console.log(pet.species)
+                const divName = "adopt-available div-" + (index+2);
+                const imgURL = "https://raw.githubusercontent.com/SahilBamb/XeoReact/ImageStore/Pet/" + pet.species + "/" + pet.color + ".png";
+                const imgURLFinal = 'url("' + imgURL + '")';
+
+                const divStyle = {
+                  opacity: pet.available ? 1 : 0.5,
+                  backgroundImage: imgURLFinal,
+                  backgroundSize: 'cover', // You can adjust this property to control how the image is displayed
+                };
+
+                return (
+                  <div 
+                    className={divName} 
+                    style={divStyle}
+                    onClick={() => {
+                      console.log(pet.species);
+                      // setPets([...pets, {...pet}]);
+                      console.log(pet.species);
+                      setPage(pet.species);
+                      }}
+                    />
+                );
+              })}
+              
             </div>
             <div className="green-button">
               <div className="overlap-31">

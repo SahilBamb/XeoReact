@@ -1,5 +1,5 @@
 .nervish {
-  background-color: rgba(255, 255, 255, 1);
+  background: conic-gradient(from 180deg at 50% 50%, rgb(223, 82, 147) 131.25deg, rgb(113, 59, 160) 333.51deg);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,8 +7,6 @@
 }
 
 .nervish .overlap-wrapper {
-  background: conic-gradient(from 180deg at 50% 50%, rgb(223, 82, 147) 131.25deg, rgb(113, 59, 160) 333.51deg);
-  background-color: rgba(255, 255, 255, 1);
   border: 1px none;
   height: 982px;
   width: 1512px;

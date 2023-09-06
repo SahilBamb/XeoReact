@@ -1,7 +1,24 @@
 import React from "react";
+import {useState} from "react";
 import "./style.css";
+import Stats from "./../partials/StatsScreen/Stats";
 
-export const Pando = () => {
+export const Pando = ({pets, setPets, setPage}) => {
+
+  const pet = {
+    species : "Pando",
+    color : "Vanilla",
+    available : true
+  };
+
+  const [stats, setStats] = useState({
+    fitness: 3,
+    happiness: 3,
+    goodness: 3,
+    adventurousness: 3,
+    socialness: 3,
+  });
+
   return (
     <div className="pando">
       <div className="overlap-wrapper-4">
@@ -9,7 +26,12 @@ export const Pando = () => {
           <div className="card-PNDO">
             <div className="buttons-PNDO">
               <div className="left-button-PNDO">
-                <div className="overlap-group-7">
+                <div 
+                  onClick = {() => { 
+                    setPets([...pets, {...pet}]); 
+                    setPage("Profile");
+                  }}
+                  className="petPage-Adopt overlap-group-7">
                   <div className="text-wrapper-25">Adopt Pet</div>
                 </div>
               </div>
@@ -32,45 +54,9 @@ export const Pando = () => {
               </header>
               <img className="line-3" alt="Line" src="/img/line.svg" />
             </div>
-            <div className="stats-screen-3">
-              <div className="randomize-button-wrapper">
-                <div className="randomize-button-3">
-                  <div className="text-wrapper-27">Randomize</div>
-                  <img className="six-sided-dice-3" alt="Six sided dice" src="/img/six-sided-dice-1-2.svg" />
-                </div>
-              </div>
-              <div className="happiness-badge-5">
-                <div className="overlap-group-8">
-                  <div className="text-wrapper-28">Happiness</div>
-                  <div className="text-wrapper-29">9</div>
-                </div>
-              </div>
-              <div className="adventurousness-3">
-                <div className="overlap-14">
-                  <div className="text-wrapper-30">Adventur-ousness</div>
-                  <div className="text-wrapper-29">9</div>
-                </div>
-              </div>
-              <div className="goodness-badge-3">
-                <div className="overlap-group-8">
-                  <div className="text-wrapper-28">Goodness</div>
-                  <div className="text-wrapper-29">9</div>
-                </div>
-              </div>
-              <div className="happiness-badge-6">
-                <div className="overlap-group-8">
-                  <div className="text-wrapper-28">Happiness</div>
-                  <div className="text-wrapper-29">9</div>
-                </div>
-              </div>
-              <div className="fitness-badge-3">
-                <div className="overlap-group-8">
-                  <div className="text-wrapper-31">Fitness</div>
-                  <div className="text-wrapper-29">9</div>
-                </div>
-              </div>
-            </div>
+            <Stats buttonColor={"#4e5e66"} stats={stats} setStats={setStats}/>
           </div>
+
           <img className="pando-img" alt="Pando img" src="/img/pando-img.png" />
         </div>
       </div>

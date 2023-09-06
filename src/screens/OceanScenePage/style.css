@@ -1,12 +1,4 @@
 .ocean-scene-page {
-  background-color: rgba(255, 255, 255, 1);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.ocean-scene-page .overlap-wrapper-3 {
   background: linear-gradient(
     180deg,
     rgb(32, 98, 153) 0%,
@@ -17,7 +9,13 @@
     rgb(46, 77, 129) 78.65%,
     rgb(57, 104, 151) 100%
   );
-  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.ocean-scene-page .overlap-wrapper-3 {
   border: 1px none;
   height: 982px;
   width: 1512px;
@@ -204,7 +202,7 @@
 
 .ocean-scene-page .span {
   color: #ffffff;
-  font-family: "Dogica Pixel-Regular", Helvetica;
+  font-family: "DogicaPixel", Helvetica;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.7px;
@@ -258,6 +256,16 @@
   position: absolute;
   top: 200px;
   width: 200px;
+}
+
+.rectangle-9:hover + .rectangle-10 {
+  transform: translateX(140px);
+  transition: transform 3s ease-in-out;
+}
+
+.rectangle-10:hover {
+  transform: translateX(140px);
+  transition: transform 3s ease-in-out;
 }
 
 .ocean-scene-page .rectangle-10 {

@@ -16,7 +16,7 @@ export const OceanScenePage = () => {
           <div className="rectangle-4" />
           <div className="rectangle-5" />
           <img className="rectangle-6" alt="Rectangle" src="/img/rectangle-7.png" />
-          <div className="text-wrapper-18">Grloveaa</div>
+          <div className="text-wrapper-18">Xexplore</div>
           <div className="rectangle-7" />
           <div className="rectangle-8" />
           <div className="flexcontainer">
@@ -35,7 +35,7 @@ export const OceanScenePage = () => {
             and typesetting industry. Lorem Ipsum has been the <br />
             industry&#39;s standard dummy text ever since the 1500s,
           </p>
-          <p className="text-wrapper-20">Lorem Ipsum is simply dummy text okay tho</p>
+          <p className="text-wrapper-20">Explore the world of Xeopia and see all</p>
           <div className="rectangle-9" />
           <div className="rectangle-10" />
           <div className="group">

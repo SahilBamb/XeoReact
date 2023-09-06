@@ -28,7 +28,7 @@ import { BurgerStore } from "./screens/BurgerStore";
 import { JobOfficeStore } from "./screens/JobOfficeStore";
 
 function App() {
-  const [page, setPage] = useState("Profile")
+  const [page, setPage] = useState("OceanScene")
   const [items, setItems] = useState([]);
   const [pets, setPets] = useState([]);
 
@@ -41,17 +41,20 @@ function App() {
       <Navbar setPage={setPage}/>
       {/* <PageTitle title={uPage} subTitle={page} color={"lightblue"}/> */}
       {/* {(Math.floor(Math.random() * 100) > 90) && <RandomEvent/> } */}
-
-      {page === "Pando" && <Pando setPage={setPage} setPets={setPets}/>}
-      {page === "Nervish" && <Nervish setPage={setPage} setPets={setPets}/>}
-      {page === "Razortooth" && <Sharktooth setPage={setPage} setPets={setPets}/>}
-      {page === "Birbeak" && <Birbeak setPage={setPage} setPets={setPets}/>}
-      {page === "Draco" && <Draco setPage={setPage} setPets={setPets}/>}
-      {page === "Turt" && <Turt setPage={setPage} setPets={setPets}/>}
-      {page === "Bumble" && <Bumble setPage={setPage} setPets={setPets}/>}
-
-      {page === "Xeoboard" && <Xeoboard/>}
-      {page === "Adopt" && <Adopt pets={pets} setPets = {setPets} setPage = {setPage}/>}
+      {page === "BurgerStore" && <BurgerStore setPage={setPage} items={items} setItems={setItems}/>}
+      {page === "OceanScene" && <OceanScenePage setPage={setPage} items={items} setItems={setItems}/>}
+      
+      {page === "Pando" && <Pando pets={pets} setPets={setPets} setPage={setPage}/>}
+      {page === "Nervish" && <Nervish pets={pets} setPets={setPets} setPage={setPage}/>}
+      {page === "Razortooth" && <Sharktooth pets={pets} setPets={setPets} setPage={setPage} />}
+      {page === "Birbeak" && <Birbeak pets={pets} setPets={setPets} setPage={setPage}/>}
+      {page === "Draco" && <Draco pets={pets} setPets={setPets} setPage={setPage}/>}
+      {page === "Turt" && <Turt pets={pets} setPets={setPets} setPage={setPage}/>}
+      {page === "Bumble" && <Bumble pets={pets} setPets={setPets} setPage={setPage}/>}
+      
+      {page === "Xeoboard" && <Xeoboard/>} 
+      {page === "Adopt" && <AdoptStore pets={pets} setPets = {setPets} setPage = {setPage}/>}
+      {/* {page === "Adopt" && <Adopt pets={pets} setPets = {setPets} setPage = {setPage}/>} */}
       {page === "Profile" && <Profile 
         items={items} 
         setItems={setItems}

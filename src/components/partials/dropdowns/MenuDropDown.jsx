@@ -6,7 +6,6 @@ export default function MenuDropDown({setPage}){
     const [menuState, setMenuState] = useState("mdd shrink-position");
 
     const expandMenu = () => {
-        console.log(menuState);
         if(menuState === "mdd shrink-position"){
             setMenuState("mdd expand-position");
         }
@@ -37,26 +36,32 @@ export default function MenuDropDown({setPage}){
                 <div id="oval"></div>
 
                 <div id="PetCentralText" onClick={() => {setPage("XeoCentral");}} class="menu-bar">
-                    <p className="pet">Pet <i class="icon fa-solid fa-house"></i></p>
-                    <p className="central">Central</p>
+                    <p className="inactive-menu pet">Pet <i class="icon fa-solid fa-house"></i></p>
+                    <p className="inactive-menu central">Central</p>
                 </div>
 
                 <div id="oval2"></div>
 
-                <div class="menu-bar" onClick={() => {setPage("Explore");}}>
+                <div class="menu-bar" onClick={() => {setPage("OceanScene");}}>
                     <i className="icon fa-solid fa-earth-americas"> </i> explore</div>
-                <div class="menu-bar">
+                
+                <div class="inactive-menu menu-bar">
                     <div className="icon fa-solid fa-cube" /> games
                 </div>
+                
                 <div class="menu-bar" onClick={() => {setPage("Xeomail");}} >
                     <div className="icon fa-regular fa-envelope" /> xeomail</div>
-                <div class="menu-bar" onClick={() => {setPage("Store");}} >
+                
+                <div class="menu-bar" onClick={() => {setPage("BurgerStore");}} >
                     <div className="icon fa-solid fa-cart-shopping" /> shops</div>
-                <div class="menu-bar" onClick={() => {setPage("Xeoboard");}} >
+                
+                <div class="inactive-menu menu-bar" onClick={() => {setPage("Xeoboard");}} >
                     <div className="icon fa-solid fa-otter" /> boards</div>
-                <div class="menu-bar">
+                
+                <div class="inactive-menu menu-bar">
                     <div className="icon fa-regular fa-newspaper" /> news</div>
-                <div class="menu-bar">
+                
+                <div class="inactive-menu menu-bar">
                     <div className="icon fa-solid fa-stroopwafel" /> stuff</div>
                 <div class="menu-bar" onClick={() => {setPage("Profile");}}>
                     <div className="icon fa-solid fa-clipboard-question" /> profile</div>

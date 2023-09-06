@@ -10,6 +10,11 @@
     height: 45px;
 }
 
+.inactive-menu {
+    color: gray;
+    opacity: .4;
+}
+
 .ddexpand-button:hover {
     background-color: #ffe375;
 }
