@@ -27,8 +27,8 @@
   width: 262px;
 }
 
-.job-office-store .overlap-42 {
-  background-image: url(../../../static/img/middle-brown-banner-1.svg);
+.job-office-store .overlap-44 {
+  background-image: url(/img/middle-brown-banner-1.svg);
   background-size: 100% 100%;
   height: 76px;
   position: relative;
@@ -204,7 +204,7 @@
 }
 
 .job-office-store .overlap-44 {
-  background-image: url(../../../static/img/middle-brown-banner-2.svg);
+  background-image: url(img/middle-brown-banner-2.svg);
   background-size: 100% 100%;
   height: 72px;
   position: relative;

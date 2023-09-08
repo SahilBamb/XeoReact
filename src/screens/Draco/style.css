@@ -44,6 +44,7 @@
 }
 
 .draco .left-button-DRK {
+  z-index: 1;
   height: 48px;
   left: 0;
   position: absolute;

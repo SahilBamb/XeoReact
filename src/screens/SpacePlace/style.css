@@ -1,0 +1,270 @@
+.SpacePlace {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .SpacePlace .overlap-wrapper {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 1.46%);
+    background-color: rgb(0, 0, 0);
+    height: 982px;
+    overflow: hidden;
+    width: 1512px;
+  }
+  
+  .SpacePlace .overlap {
+    background-image: url(https://cdn.animaapp.com/projects/64c6fa72dcbdbd5700002966/releases/64fa837645d7dfa9d8ca45f7/img/main-image.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 985px;
+    left: 100px;
+    position: relative;
+    width: 1308px;
+  }
+  
+  .SpacePlace .removal {
+    height: 191px;
+    left: 1083px;
+    object-fit: cover;
+    position: absolute;
+    top: 125px;
+    width: 191px;
+  }
+
+  .SpacePlace .LawOffice {
+    height: 160px;
+    left: 143px;
+    object-fit: cover;
+    position: absolute;
+    top: 195px;
+  }
+  
+  .SpacePlace .bottom-text {
+    height: 171px;
+    left: 994px;
+    position: absolute;
+    top: 755px;
+    width: 286px;
+  }
+
+  .SpacePlace .bottom-text, .bottom-text-2, .bottom-text-3 {
+    filter: blur(2px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .SpacePlace .bottom-text, .bottom-text-2, .bottom-text-3, .storeIcons {
+    opacity: 0.5;
+  }
+
+  .SpacePlace .bottom-text:hover, .bottom-text-2:hover, .bottom-text-3:hover {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  .SpacePlace .storeIcons:hover + .bottom-text, .storeIcons:hover + .bottom-text-2, .storeIcons:hover + .bottom-text-3 {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  .SpacePlace .bottom-text:hover .storeIcons {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  .SpacePlace .storeIcons:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    animation: identifier 1s ease-in-out infinite alternate;
+  }
+
+  .SpacePlace .storeIcons:active {
+    transform: scale(.9);
+
+  }
+
+  @keyframes identifier {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .SpacePlace .storeIcons:active {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    animation: identifier 1s ease-in-out infinite alternate;
+  }
+  
+
+  .SpacePlace .text-wrapper {
+    color: #35a6b2;
+    font-family: "Raleway", Helvetica;
+    font-size: 20px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: -1px;
+    line-height: normal;
+    position: absolute;
+    top: 148px;
+    width: 47px;
+  }
+  
+  .SpacePlace .overlap-group {
+    height: 135px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 280px;
+  }
+  
+  .SpacePlace .serens-poementos {
+    color: #35a6b2;
+    font-family: "Raleway", Helvetica;
+    font-size: 14px;
+    font-weight: 200;
+    left: 0;
+    letter-spacing: -0.7px;
+    line-height: normal;
+    position: absolute;
+    top: 41px;
+    width: 280px;
+  }
+  
+  .SpacePlace .div {
+    color: #35a6b2;
+    font-family: "Raleway", Helvetica;
+    font-size: 30px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: -1.5px;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 224px;
+  }
+  
+  .SpacePlace .bottom-text-2 {
+    height: 171px;
+    left: 592px;
+    position: absolute;
+    top: 755px;
+    width: 286px;
+  }
+  
+  .SpacePlace .text-wrapper-2 {
+    color: #35a6b2;
+    font-family: "Raleway", Helvetica;
+    font-size: 20px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: -1px;
+    line-height: normal;
+    position: absolute;
+    top: 148px;
+    width: 62px;
+  }
+  
+  .SpacePlace .bottom-text-3 {
+    height: 171px;
+    left: 150px;
+    position: absolute;
+    top: 755px;
+    width: 286px;
+  }
+  
+  .SpacePlace .text-wrapper-3 {
+    color: #35a6b2;
+    font-family: "Raleway", Helvetica;
+    font-size: 20px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: -1px;
+    line-height: normal;
+    position: absolute;
+    top: 148px;
+    width: 114px;
+  }
+  
+  .SpacePlace .mr-justice-s {
+    color: #35a6b2;
+    font-family: "Raleway", Helvetica;
+    font-size: 30px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: -1.5px;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 280px;
+  }
+  
+  .SpacePlace .top-text-title {
+    height: 113px;
+    left: 73px;
+    position: absolute;
+    top: 47px;
+    width: 328px;
+  }
+  
+  .SpacePlace .flexcontainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    height: 66px;
+    left: 0;
+    position: absolute;
+    top: 47px;
+    width: 324px;
+  }
+  
+  .SpacePlace .text {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Raleway", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+  }
+  
+  .SpacePlace .span {
+    color: #ffffff;
+    font-family: "Raleway", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+  }
+  
+  .SpacePlace .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Raleway", Helvetica;
+    font-size: 30px;
+    font-weight: 600;
+    left: 56px;
+    letter-spacing: -1.5px;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .SpacePlace .img {
+    height: 188px;
+    left: 484px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    width: 188px;
+  }
+  
+  

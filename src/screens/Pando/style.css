@@ -46,6 +46,7 @@
 }
 
 .pando .overlap-group-7 {
+  color: #ffffff;
   border: 2px solid;
   border-color: #ffffff;
   border-radius: 20px;
@@ -54,8 +55,23 @@
   width: 211px;
 }
 
+.pando .petPage-Adopt {
+  transition: all 0.2s ease-in-out;
+}
+
+.pando .petPage-Adopt:active {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+
+.pando .petPage-Adopt:hover {
+  transform: scale(1.1);
+}
+
 .pando .text-wrapper-25 {
-  color: #ffffff;
+  user-select: none;
+  color: inherit;
   font-family: "Source Sans Pro", Helvetica;
   font-size: 20px;
   font-weight: 400;
@@ -76,6 +92,7 @@
 }
 
 .pando .view-variants-wrapper {
+  user-select: none;
   background-color: #eedb9a;
   border-radius: 20px;
   height: 48px;
@@ -83,7 +100,60 @@
   width: 392px;
 }
 
+.pando .view-variants-wrapper {
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: None;
+  }
+  100% {
+    color: #f7f8fd;
+    box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
+  }
+}
+
+.pando .variants-mini-screen {
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+  /* height: 400px;
+  width: 400px; */
+  max-width: 400px;
+  min-height: 400px;
+  left: 230px;
+  top: -420px;
+  background-color: rgb(0,0,0,0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.pando .variantImage {
+  z-index: 2;
+  margin: .2em;
+  height: 5em;
+  width: 5em;
+  /* background-color: #f7f8fd; */
+  border: 1px solid #f7f8fd;
+}
+
+.pando .variantImage:hover {
+  z-index: 3;
+  scale: 3;
+}
+
 .pando .view-variants {
+  color: inherit;
   height: 14px;
   left: 142px;
   position: absolute;

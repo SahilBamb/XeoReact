@@ -1,0 +1,36 @@
+.Breadcrumbs {
+    position: absolute;
+    z-index: 2;
+    right: 100px;
+    bottom: 50px;
+    transform: scale(2);
+    margin: 40px;
+    opacity: 0.2;
+    transition: all 0.2s ease;
+}
+
+.Breadcrumbs:hover {
+    opacity: 1;
+}
+
+.Breadcrumbs .navButton  {
+    padding: 10px;
+    background-color: #7fffd4;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+.Breadcrumbs .navButton:hover {
+    cursor: pointer;
+    background-color: #a7fce0;
+    
+}
+.Breadcrumbs .navButton:active {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.Breadcrumbs .forwardButton {
+    position: absolute;
+}

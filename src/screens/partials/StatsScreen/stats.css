@@ -63,6 +63,7 @@
 
 .randomizeButton:active {
   transform: translateY(0px);
+  filter: brightness(1.1);
   transition: all 0.1s ease-in;
 }
 
@@ -107,7 +108,7 @@
 }
 
 .statScreen .statsNum {
-  
+  user-select: none;
   font-family: "Raleway", Helvetica;
   font-size: 40px;
   font-weight: 700;
@@ -118,6 +119,11 @@
   top: 0;
   white-space: nowrap;
   width: 24px;
+}
+
+.statsNum:hover {
+  transform: translate(0, -5px);
+  transition: all .1s ease-in-out;
 }
 
 .statScreen .low.statsNum {

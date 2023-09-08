@@ -5,6 +5,19 @@ import Stats from "./../partials/StatsScreen/Stats";
 
 export const Pando = ({pets, setPets, setPage}) => {
 
+
+  const [variantsMiniScreen, setVariantsMiniScreen] = useState(false);
+
+  function showVariants() {
+    setVariantsMiniScreen(variantsMiniScreen => !variantsMiniScreen);
+  }
+
+  const baseURL = 'https://raw.githubusercontent.com/SahilBamb/XeoReact/ImageStore/Pet/Pando/';
+
+  const variants = ["Vanilla", "Mushroom"];
+
+  const imageType = '.png';
+
   const pet = {
     species : "Pando",
     color : "Vanilla",
@@ -28,14 +41,31 @@ export const Pando = ({pets, setPets, setPage}) => {
               <div className="left-button-PNDO">
                 <div 
                   onClick = {() => { 
-                    setPets([...pets, {...pet}]); 
-                    setPage("Profile");
+                    // setPets([...pets, {...pet}]); 
+                    // setPage("Profile");
                   }}
                   className="petPage-Adopt overlap-group-7">
                   <div className="text-wrapper-25">Adopt Pet</div>
                 </div>
               </div>
-              <div className="right-button-PNDO">
+              <div
+                className = "variants-mini-screen"
+                style = {{visibility: variantsMiniScreen ? "visible" : "hidden"}}
+                > 
+                {variants.map((variant) => (
+                  <img 
+                    key={variant}
+                    className="variantImage"
+                    src = {baseURL + variant + imageType}
+                    alt = {variant}
+                    ></img>
+                ))}
+        
+               {/* <div className="variantImage"></div>
+               <div className="variantImage"></div>
+               <div className="variantImage"></div> */}
+              </div>
+              <div className="right-button-PNDO" onClick={() => showVariants()}>
                 <div className="view-variants-wrapper">
                   <img className="view-variants" alt="View variants" src="/img/view-variants.png" />
                 </div>

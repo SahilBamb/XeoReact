@@ -26,11 +26,17 @@ import { AdoptStore } from "./screens/AdoptStore";
 import { BubbleStore } from "./screens/BubbleStore";
 import { BurgerStore } from "./screens/BurgerStore";
 import { JobOfficeStore } from "./screens/JobOfficeStore";
+import { SpacePlace } from "./screens/SpacePlace/Index";
+
+import { Stuff } from "./screens/Stuff";
 
 function App() {
-  const [page, setPage] = useState("OceanScene")
+  const [page, setPage] = useState("SpacePlace")
   const [items, setItems] = useState([]);
   const [pets, setPets] = useState([]);
+  const [menuState, setMenuState] = useState("mdd expand-position");
+  const [historyStack, setHistoryStack] = useState([]);
+
 
   useEffect(() => {}, [page])
 
@@ -38,11 +44,17 @@ function App() {
   
   return (
     <main>
-      <Navbar setPage={setPage}/>
+      <Navbar setPage={setPage} page={page} historyStack={historyStack} setHistoryStack={setHistoryStack} menuState={menuState} setMenuState={setMenuState}/>
       {/* <PageTitle title={uPage} subTitle={page} color={"lightblue"}/> */}
       {/* {(Math.floor(Math.random() * 100) > 90) && <RandomEvent/> } */}
+
+      {page === "Stuff" && <Stuff/>}
+
       {page === "BurgerStore" && <BurgerStore setPage={setPage} items={items} setItems={setItems}/>}
-      {page === "OceanScene" && <OceanScenePage setPage={setPage} items={items} setItems={setItems}/>}
+      {page === "BubbleStore" && <BubbleStore setPage={setPage} items={items} setItems={setItems}/>}
+      {page === "JobOfficeStore" && <JobOfficeStore setPage={setPage} items={items} setItems={setItems}/>}
+
+      {page === "OceanScene" && <OceanScenePage page={page} setPage={setPage} items={items} setItems={setItems}/>}
       
       {page === "Pando" && <Pando pets={pets} setPets={setPets} setPage={setPage}/>}
       {page === "Nervish" && <Nervish pets={pets} setPets={setPets} setPage={setPage}/>}
@@ -67,7 +79,7 @@ function App() {
         setItems={setItems}
       />}
       {page === "Xeomail" && <Neomail/>}
-      {page === "Explore" && <Explore/>}
+      {page === "SpacePlace" && <SpacePlace page={page} setPage={setPage}/>}
       
     </main>
   )}

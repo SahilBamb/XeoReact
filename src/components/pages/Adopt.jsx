@@ -68,7 +68,6 @@ export default function Adopt({pets, setPets, setPage}){
                             <img 
                                 onClick={() => {
                                     // setPets([...pets, {...pet}]);
-                                    console.log(pet.species);
                                     setPage(pet.species);
                                 }}
                                 className= {pet.available ? "petIcon"  : "petIcon inactive"}

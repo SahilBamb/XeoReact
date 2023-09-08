@@ -216,6 +216,7 @@
 }
 
 .burger-store .welcome-to-burger {
+  z-index: 2;
   color: #ffffff;
   font-family: "Teko", Helvetica;
   font-size: 25px;

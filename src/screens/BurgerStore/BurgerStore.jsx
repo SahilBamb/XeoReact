@@ -63,7 +63,12 @@ export const BurgerStore = ({setPage, items, setItems}) => {
               <img className="burger-icon" alt="Burger icon" src="/img/burger-icon.svg" />
             </div>
           </div>
-          <div className="item-box-2" />
+          <ItemCase 
+            items = {items}
+            setItems = {setItems}
+            setPage = {setPage}
+            posStoreInventory = {posStoreInventory}
+            />
           {/* <div className="rectangle-17" /> */}
           <p className="welcome-to-burger">
             {greetingLine1}<br />
@@ -71,12 +76,7 @@ export const BurgerStore = ({setPage, items, setItems}) => {
           </p>
         </div>
       </div>
-      <ItemCase 
-            items = {items}
-            setItems = {setItems}
-            setPage = {setPage}
-            posStoreInventory = {posStoreInventory}
-            />
+      
     </div>
   );
 };

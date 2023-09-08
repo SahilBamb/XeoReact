@@ -22,7 +22,7 @@ export default function Stats({buttonColor = "#FFC700", stats, setStats}) {
         if (stat > 6) {
             return "high statsNum";
         }
-        else if (stat < 3) {
+        else if (stat < 4) {
             return "low statsNum";
         }
         else {
@@ -33,10 +33,10 @@ export default function Stats({buttonColor = "#FFC700", stats, setStats}) {
     function randomizeStats() {
         let temp = [];
         let rSum = 0;
-        let limit = 40;
+        let limit = 20;
 
         for (let key in stats) {
-            if (rSum == limit) {
+            if (rSum >= limit) {
                 temp.push(0)
             }
             else {
@@ -45,7 +45,9 @@ export default function Stats({buttonColor = "#FFC700", stats, setStats}) {
             }
         }
 
-        shuffleArray(temp);
+        console.log(rSum);
+
+        // shuffleArray(temp);
         
         setStats({
             fitness: temp[0],

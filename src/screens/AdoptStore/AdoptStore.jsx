@@ -4,59 +4,67 @@ import "./style.css";
 const possiblePets = [
   {species : "Birbeak",
   color : "Vanilla",
-  available : true},
+  available : 0},
 
   {species : "Bumble",
   color : "Vanilla",
-  available : true},
+  available : 0},
 
-  // {species : "Bunni",
-  // color : "Vanilla",
-  // available : true},
+  {species : "Bunni",
+  color : "Vanilla",
+  available : 0},
 
   {species : "Draco",
   color : "Vanilla",
-  available : true},
+  available : 0},
 
-  // {species : "Foxi",
-  // color : "Vanilla",
-  // available : true},
+
+
+  {species : "Foxi",
+  color : "Vanilla",
+  available : 1},
 
   {species : "Gryphon",
   color : "Vanilla",
-  available : false},
+  available : 1},
 
-  // {species : "Izzard",
-  // color : "Vanilla",
-  // available : true},
-
-  // {species : "Kitti",
-  // color : "Vanilla",
-  // available : false},
-
-  {species : "Nervish",
+  {species : "Izzard",
   color : "Vanilla",
-  available : false},
-
-  {species : "Pando",
-  color : "Vanilla",
-  available : true},
-
-  {species : "Razortooth",
-  color : "Vanilla",
-  available : true},
-
-  {species : "Tigre",
-  color : "Vanilla",
-  available : false},
+  available : 1},
 
   {species : "Turt",
   color : "Vanilla",
-  available : false}
+  available : 1},
+
+  // {species : "Kitti",
+  // color : "Vanilla",
+  // available : 1},
+
+
+
+  {species : "Nervish",
+  color : "Vanilla",
+  available : 2},
+
+  {species : "Pando",
+  color : "Vanilla",
+  available : 2},
+
+  {species : "Razortooth",
+  color : "Vanilla",
+  available : 2},
+
+  {species : "Tigre",
+  color : "Vanilla",
+  available : 2}
+
 ]
 
-const availablePets = possiblePets.filter(pet => pet.available);
-const notAvailablePets = possiblePets.filter(pet => !pet.available);
+const now = new Date();
+const month = now.getMonth();
+
+const availablePets = possiblePets.filter(pet => (pet.available == month % 3));
+const notAvailablePets = possiblePets.filter(pet => (pet.available == (month+1) % 3));
 
 
 export const AdoptStore = ({pets, setPets, setPage}) => {
@@ -109,7 +117,6 @@ export const AdoptStore = ({pets, setPets, setPage}) => {
             </div>
             <div className="top-boxes">
               {availablePets.map((pet,index) => {
-                console.log(pet.species)
                 const divName = "adopt-available div-" + (index+2);
                 const imgURL = "https://raw.githubusercontent.com/SahilBamb/XeoReact/ImageStore/Pet/" + pet.species + "/" + pet.color + ".png";
                 const imgURLFinal = 'url("' + imgURL + '")';

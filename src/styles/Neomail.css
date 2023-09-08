@@ -1,3 +1,25 @@
+mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+mail .sendMail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+mail body {
+    position: absolute;
+}
+
 mail h4, h5{
     margin: 20px;
     color: black;
@@ -33,16 +55,50 @@ mail th {
     font-weight: bold;
 }
 
-
-
-
-mail tr:nth-child(odd) :not(th) {
-    background-color: lightgrey;
- }
-
 .lastRow {
     background-color: #ffcc03;
     font-weight: bold;
     height: 15px;
     text-align: center;
 }
+
+tr {
+    transition: all 0.5s ease;
+}
+
+mail tr:nth-child(even):not(.lastRow) {
+    background-color: lightgrey;
+ }
+
+ .messageBody {
+    height: 0px;
+    visibility: visible;
+    margin-left: auto;
+    margin-right: auto;
+    /* font: 12px Verdana, Arial, Helvetica, sans-serif; */
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ .messageBody-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    padding: 10px;
+
+
+ }
+
+ tr td:hover {
+    color: blue;
+    cursor: pointer;
+ }
+
+/* mail tr:hover {
+    background-color: #ffcc03;
+} */
+
+/* mail tr:active {
+    height: 400px;
+} */

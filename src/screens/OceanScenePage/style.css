@@ -54,7 +54,36 @@
   position: absolute;
   top: 673px;
   width: 193px;
+  transition: all .2s ease-in-out;
 }
+
+.ocean-scene-page .map-1 {
+  
+
+}
+
+.ocean-scene-page .map-1:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.ocean-scene-page .map-1 {
+  transition: all .2s ease-in-out;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0px #ee79eb;
+  }
+  50% {
+    box-shadow: 0 0 30px #ee79eb;
+  }
+  100% {
+    box-shadow: 0 0 0px #ee79eb;
+  }
+}
+
 
 .ocean-scene-page .rectangle-2 {
   background: linear-gradient(
@@ -158,6 +187,7 @@
   width: 295px;
 }
 
+
 .ocean-scene-page .rectangle-8 {
   background: linear-gradient(
     180deg,
@@ -174,6 +204,12 @@
   position: absolute;
   top: 491px;
   width: 232px;
+  transition: transform 1s;
+}
+
+.ocean-scene-page .rectangle-8:hover {
+  
+  transition: transform 1s;
 }
 
 .ocean-scene-page .flexcontainer {
@@ -260,16 +296,17 @@
 
 .rectangle-9:hover + .rectangle-10 {
   transform: translateX(140px);
-  transition: transform 3s ease-in-out;
-}
-
-.rectangle-10:hover {
-  transform: translateX(140px);
-  transition: transform 3s ease-in-out;
+  transition: transform 1.4s ease-in-out;
 }
 
 .ocean-scene-page .rectangle-10 {
   background-color: #6bcf99;
+  transform: translateX(0);
+  transition: transform .2s;
+}
+
+
+.ocean-scene-page .rectangle-10 {
   border: 1px solid;
   border-color: #000000;
   border-radius: 12px;
@@ -278,6 +315,15 @@
   position: absolute;
   top: 200px;
   width: 60px;
+}
+
+.ocean-scene-page .span {
+  user-select: none;
+}
+
+.ocean-scene-page .rectangle-10:hover {
+  transform: translateX(140px);
+  transition: all s ease-in-out;
 }
 
 .ocean-scene-page .group {
@@ -414,11 +460,30 @@
 .ocean-scene-page .rectangle-15 {
   border: 3px solid;
   border-color: transparent;
+  border-radius: 50%;
   border-image: linear-gradient(to bottom, rgb(209.31, 138.11, 72.39), rgb(234.81, 205.23, 49.9)) 1;
-  border-radius: 50px;
   height: 49px;
   left: 561px;
   position: absolute;
   top: 27px;
   width: 49px;
+  transition: all 1s ease-in-out;
+  animation: ringGrow 1s ease-in-out infinite alternate;
+}
+
+@keyframes ringGrow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
+
+.ocean-scene-page .rectangle-15:hover {
+  transform: scale(5);
 }
