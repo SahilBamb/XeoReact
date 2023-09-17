@@ -1,0 +1,1 @@
+export { FighterGambling } from "./FighterGambling";

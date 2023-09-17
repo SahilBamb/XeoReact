@@ -27,11 +27,13 @@ import { BubbleStore } from "./screens/BubbleStore";
 import { BurgerStore } from "./screens/BurgerStore";
 import { JobOfficeStore } from "./screens/JobOfficeStore";
 import { SpacePlace } from "./screens/SpacePlace/Index";
+import { FighterGambling } from "./screens/FighterGambling";
+import { Grid } from "./screens/Grid";
 
 import { Stuff } from "./screens/Stuff";
 
 function App() {
-  const [page, setPage] = useState("SpacePlace")
+  const [page, setPage] = useState("Adopt")
   const [items, setItems] = useState([]);
   const [pets, setPets] = useState([]);
   const [menuState, setMenuState] = useState("mdd expand-position");
@@ -49,6 +51,11 @@ function App() {
       {/* {(Math.floor(Math.random() * 100) > 90) && <RandomEvent/> } */}
 
       {page === "Stuff" && <Stuff/>}
+
+      {page === "Grid" && <Grid setPage={setPage} items={items} setItems={setItems}/>}
+{/* 
+      {page === "FighterGambling" && <FighterGambling setPage={setPage} items={items} setItems={setItems}/>} */}
+
 
       {page === "BurgerStore" && <BurgerStore setPage={setPage} items={items} setItems={setItems}/>}
       {page === "BubbleStore" && <BubbleStore setPage={setPage} items={items} setItems={setItems}/>}

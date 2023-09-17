@@ -16,6 +16,13 @@ export const BurgerStore = ({setPage, items, setItems}) => {
                     "Description" : "A magical potion gives your pet a penchant for shrooms."},
         rarity : 2,}];
 
+        <ItemCase 
+            items = {items}
+            setItems = {setItems}
+            setPage = {setPage}f
+            posStoreInventory = {posStoreInventory}
+            />
+
   const dialougeLines = [
     "Hey there, handsome! Welcome to Burger. Stop. I'll whip up something delicious just for you, though I hope my burger-making skills can live up to your expectations.",
     "Well, hello, hero! Ready to indulge in some burger magic? I'm here to serve you with a smile, even if I'm a bit shy.",

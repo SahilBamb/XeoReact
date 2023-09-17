@@ -1,0 +1,21 @@
+.Grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    
+}
+
+.gridBox {
+    
+}
+
+.divRow {
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px solid black;
+
+}

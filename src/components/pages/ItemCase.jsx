@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {rarities} from '../pages/config.js';
 import "../../styles/ItemCase.css";
+import itemDetails from '../pages/itemDetails.jsx';
 
 export default function ItemCase({items, setItems, setPage, posStoreInventory}) {
     
@@ -58,7 +59,17 @@ export default function ItemCase({items, setItems, setPage, posStoreInventory}) 
                                 onClick={() => {addtoItems(e, items, setItems); }}
                                 style={style}
                                 className={"box"}>
-                                    {(Object.keys(e).length !== 0) && <div className="price-tag">$1</div>}
+                                    {(Object.keys(e).length !== 0) && 
+                                    
+                                    
+                                    <div className="price-tag">$0</div>
+
+                                    
+                                    }
+
+                                    
+
+                                    
                             </div>
                                 );
                     })};

@@ -1,6 +1,6 @@
 @import "globals.css";
 
-img.pet {
+.pet-card img.pet {
     height: 300px;
     width: 300px;
 }
@@ -16,7 +16,7 @@ img.pet {
     border: 10px solid #ffffff;
 }
 
-.pet-preview:hover {
+.pet-card .pet-preview:hover {
     opacity: 90%;
     position: absolute;
     width: 300px;
@@ -26,7 +26,7 @@ img.pet {
     animation: in-and-out 3s ease forwards infinite;
 }
 
-.pet-preview {
+.pet-card .pet-preview {
     opacity: 0%;
     position: absolute;
     width: 300px;
@@ -46,6 +46,6 @@ transform: scale(1.1);
 } */
 
 /* Add some padding inside the card container */
-.pet-card-text {
+.pet-card .pet-card-text {
     padding: 2px 16px;
 }

@@ -1,0 +1,40 @@
+.AdoptButton {
+
+}
+
+.AdoptButton .left-button-PNDO {
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 213px;
+}
+
+.AdoptButton .overlap-group-7 {
+  color: #ffffff;
+  border: 2px solid;
+  border-color: #ffffff;
+  border-radius: 20px;
+  height: 48px;
+  position: relative;
+  width: 211px;
+}
+
+
+.AdoptButton .text-wrapper-25 {
+  user-select: none;
+  color: inherit;
+  font-family: "Source Sans Pro", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 63px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.AdoptButton .petPage-Adopt:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,95 @@
+.FighterGambling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 1024px;
+    border: 1px solid black;
+}
+
+.FighterArena {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    opacity: 0.8;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.FighterIcon {
+    height: 200px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.FighterBody {
+    position: relative;
+    top: 0px;
+}
+
+.FighterButton {
+    height: 50px;
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.Fighter1 {
+    position: relative;
+    background-color: rgb(154, 110, 255);
+}
+
+.Fighter1Body {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+.Fighter2 {
+    position: relative;
+    background-color: rgb(197, 255, 110);
+}
+
+
+.Fighter2Body {
+    position: absolute;
+}
+
+.GambleButton {
+    height: 50px;
+    width: 200px;
+    background-color: aquamarine;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.GambleButton:active {
+    scale: 0.95;
+}
+
+.GamblingAmount {
+    height: 50px;
+    width: 200px;
+    background-color: rgb(242, 57, 57);
+    margin: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 15px;
+}
+
+.FighterHealth {
+    height: 20px;
+    background-color: rgb(59, 255, 190);
+}
+
+.GambleButton {
+    height: 50px;
+    width: 100px;
+}

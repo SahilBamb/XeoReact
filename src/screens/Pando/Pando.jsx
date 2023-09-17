@@ -2,6 +2,7 @@ import React from "react";
 import {useState} from "react";
 import "./style.css";
 import Stats from "./../partials/StatsScreen/Stats";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Pando = ({pets, setPets, setPage}) => {
 
@@ -21,7 +22,8 @@ export const Pando = ({pets, setPets, setPage}) => {
   const pet = {
     species : "Pando",
     color : "Vanilla",
-    available : true
+    available : true, 
+    allStats : {}
   };
 
   const [stats, setStats] = useState({
@@ -38,16 +40,7 @@ export const Pando = ({pets, setPets, setPage}) => {
         <div className="overlap-12">
           <div className="card-PNDO">
             <div className="buttons-PNDO">
-              <div className="left-button-PNDO">
-                <div 
-                  onClick = {() => { 
-                    // setPets([...pets, {...pet}]); 
-                    // setPage("Profile");
-                  }}
-                  className="petPage-Adopt overlap-group-7">
-                  <div className="text-wrapper-25">Adopt Pet</div>
-                </div>
-              </div>
+                <AdoptButton pet={pet} pets={pets} setPets={setPets} setPage={setPage} stats={stats}/>
               <div
                 className = "variants-mini-screen"
                 style = {{visibility: variantsMiniScreen ? "visible" : "hidden"}}

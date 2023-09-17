@@ -21,7 +21,7 @@ export default function Pet({species, color, colorPaint, stats, description={}, 
                             style={{
                                 backgroundColor: stat.color,
                             }}
-                            >{stat.value}</div>
+                            >{stat.name}</div>
                 })}
             </div>
 
