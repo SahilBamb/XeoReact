@@ -58,7 +58,8 @@ export const OceanScenePage = ({page, setPage}) => {
           <div className="text-wrapper-22">Cony</div>
           <div className="text-wrapper-23">Socke</div>
           <div className="text-wrapper-24">Omeo</div>
-          <div className="rectangle-15" />
+          {/* <div className="rectangle-15" /> */}
+          
         </div>
       </div>
     </div>

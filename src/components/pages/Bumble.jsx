@@ -1,6 +1,7 @@
 import React from "react";
 import StatsScreen from "../partials/StatsScreen/index";
 import "./Bumble.css";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export default function Bumble(props) {
   const {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import ItemCase from "../../components/pages/ItemCase";
+import DialougeBox from "../../components/pages/DialougeBox";
 
 export const BurgerStore = ({setPage, items, setItems}) => {
 
@@ -16,29 +17,26 @@ export const BurgerStore = ({setPage, items, setItems}) => {
                     "Description" : "A magical potion gives your pet a penchant for shrooms."},
         rarity : 2,}];
 
-        <ItemCase 
-            items = {items}
-            setItems = {setItems}
-            setPage = {setPage}f
-            posStoreInventory = {posStoreInventory}
-            />
+        // <ItemCase 
+        //     items = {items}
+        //     setItems = {setItems}
+        //     setPage = {setPage}f
+        //     posStoreInventory = {posStoreInventory}
+        //     />
 
-  const dialougeLines = [
-    "Hey there, handsome! Welcome to Burger. Stop. I'll whip up something delicious just for you, though I hope my burger-making skills can live up to your expectations.",
-    "Well, hello, hero! Ready to indulge in some burger magic? I'm here to serve you with a smile, even if I'm a bit shy.",
-    "Hey, champ! Our burgers are made with love, and I'll try my best to make sure they're as amazing as you deserve.",
-    "Hi, cutie pie! You've just stepped into Burger Paradise, and I'll do my best to make your visit unforgettable. Just don't be too harsh on me; I'm still learning the grill!",
-    "Hello, sweetie! Your burger wishes are my command, even if I sometimes worry about getting your order just right.",
-    "Welcome to burger heaven! I'm here to make your day sizzle, though I have to admit, I get a little nervous when someone as charming as you walks in.",
-    "Hey, burger lover! Your smile is the secret ingredient to our success, and I hope I can keep it that way.",
-    "Hi there, burger enthusiast! Your choice is the highlight of my day, even if I sometimes second-guess my cooking skills.",
-    "Hello, burger boss! I'm ready to make your burger dreams come true, though I hope you'll be patient with me as I learn the ropes.",
-    "Welcome back, honey! I'm so glad to see you again. Your continued support means the world to me, even though I sometimes worry if you'll still enjoy my burgers."]
+        const dialougeLines = [
+          "Hey there, handsome! Welcome to Burger. Stop. I'll whip up something delicious just for you, though I hope my burger-making skills can live up to your expectations.",
+          "Well, hello, hero! Ready to indulge in some burger magic? I'm here to serve you with a smile, even if I'm a bit shy.",
+          "Hey, champ! Our burgers are made with love, and I'll try my best to make sure they're as amazing as you deserve.",
+          "Hi, cutie pie! You've just stepped into Burger Paradise, and I'll do my best to make your visit unforgettable. Just don't be too harsh on me; I'm still learning the grill!",
+          "Hello, sweetie! Your burger wishes are my command, even if I sometimes worry about getting your order just right.",
+          "Welcome to burger heaven! I'm here to make your day sizzle, though I have to admit, I get a little nervous when someone as charming as you walks in.",
+          "Hey, burger lover! Your smile is the secret ingredient to our success, and I hope I can keep it that way.",
+          "Hi there, burger enthusiast! Your choice is the highlight of my day, even if I sometimes second-guess my cooking skills.",
+          "Hello, burger boss! I'm ready to make your burger dreams come true, though I hope you'll be patient with me as I learn the ropes.",
+          "Welcome back, honey! I'm so glad to see you again. Your continued support means the world to me, even though I sometimes worry if you'll still enjoy my burgers."]
+      
 
-  const randomDialogue = dialougeLines[Math.floor(Math.random() * dialougeLines.length)];
-  const randomDialogueLen = randomDialogue.length;
-  const greetingLine1 = randomDialogue.substring(0, randomDialogueLen/2);
-  const greetingLine2 = randomDialogue.substring((randomDialogueLen/2), randomDialogueLen);
 
   return (
     <div className="burger-store">
@@ -77,10 +75,10 @@ export const BurgerStore = ({setPage, items, setItems}) => {
             posStoreInventory = {posStoreInventory}
             />
           {/* <div className="rectangle-17" /> */}
-          <p className="welcome-to-burger">
-            {greetingLine1}<br />
-            {greetingLine2}
-          </p>
+          <DialougeBox 
+            dialougeLines = {dialougeLines}
+          />
+
         </div>
       </div>
       

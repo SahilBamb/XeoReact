@@ -2,7 +2,7 @@ import React from "react";
 import {useState} from "react";
 import "./style.css";
 import Stats from "./../partials/StatsScreen/Stats";
-
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Turt = ({pets, setPets, setPage}) => {
 

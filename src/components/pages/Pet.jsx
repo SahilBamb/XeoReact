@@ -6,11 +6,13 @@ export default function Pet({species, color, colorPaint, stats, description={}, 
                     + species + "/" + color + ".png"
     const imgURLPreview = "https://raw.githubusercontent.com/SahilBamb/XeoReact/ImageStore/Pet/" 
                     + species + "/" + colorPaint + ".png"
+
+    console.log(stats);
     return (
         <div className="pet-card"
             onClick={() => {onClick(idx)}}>
             {colorPaint && <img visibility="hidden" src={imgURLPreview} className="pet-preview"></img>}
-            <img src={imgURL} className="pet"></img>
+            <img src={imgURL} className="pet shiny"></img>
             <div class="pet-card-text">
                 <p className="maplestory-bold-center">{species} {color}</p>
             </div>
@@ -21,7 +23,7 @@ export default function Pet({species, color, colorPaint, stats, description={}, 
                             style={{
                                 backgroundColor: stat.color,
                             }}
-                            >{stat.name}</div>
+                            >{stat.name} {stat.value}</div>
                 })}
             </div>
 

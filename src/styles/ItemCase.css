@@ -1,7 +1,23 @@
-.ep-container {
+.burger-store .ep-container {
     position: absolute;
     left: 1000px;
     top: 140px;
+}
+
+.job-office-store .ep-container {
+    position: absolute;
+    left: 240px;
+    top: 140px;
+}
+
+.bubble-store .ep-container {
+    position: absolute;
+    height: 246px;
+    left: 1007px;
+    filter: hue-rotate(180deg);
+    position: absolute;
+    top: 241px;
+    width: 377px;
 }
 
 .burger-store .item-box-2 {
@@ -15,6 +31,21 @@
     top: 241px;
     width: 367px;
   }
+
+.job-office-store .item-box-2 {
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    box-shadow: 0px 4px 50px 20px #0000009e;
+    /* 
+    height: 508px; 
+    width: 367px;
+    */
+    left: 1007px;
+    opacity: 0.8;
+    position: absolute;
+    top: 241px;
+
+  }
   
 .ep-item-case {
     position: absolute;
@@ -22,10 +53,12 @@
     /* height: 530px;
     width: 400px; */
     min-width: 400px;
+    
     background-color: rgb(255,255,255,0.7);
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px rgb(0,0,0,0.7);
 }
+
 
 .refresh-button {
     position: absolute;

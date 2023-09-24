@@ -1,0 +1,62 @@
+.welcome-to-burger {
+    z-index: 2;
+    color: #ffffff;
+    font-family: "Teko", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 497px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 652px;
+    min-width: none;
+  }
+  
+.welcome-to-burger {
+    animation: 10s ease 0s 1 normal none running fadeIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+
+.bubble-store .welcome-to-burger {
+  left: 700px;
+}
+  
+  /* .burger-store .rectangle-17 {
+    animation: 4s ease 0s 1 normal none running fadeInBox;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  } */
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* @keyframes fadeInBox {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .6;
+    }
+    100% {
+      opacity: .6;
+    }
+  } */

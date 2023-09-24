@@ -23,6 +23,7 @@ export const Pando = ({pets, setPets, setPage}) => {
     species : "Pando",
     color : "Vanilla",
     available : true, 
+    statsList : {},
     allStats : {}
   };
 
@@ -53,7 +54,6 @@ export const Pando = ({pets, setPets, setPage}) => {
                     alt = {variant}
                     ></img>
                 ))}
-        
                {/* <div className="variantImage"></div>
                <div className="variantImage"></div>
                <div className="variantImage"></div> */}

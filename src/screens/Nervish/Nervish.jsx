@@ -2,6 +2,7 @@ import React from "react";
 import {useState} from "react";
 import "./style.css";
 import Stats from "./../partials/StatsScreen/Stats";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Nervish = ({pets, setPets, setPage}) => {
 
@@ -17,7 +18,13 @@ export const Nervish = ({pets, setPets, setPage}) => {
     goodness: 3,
     adventurousness: 3,
     socialness: 3,
+    statsList: {}
   });
+
+  function updatePets(pet) {
+    pet.statsList = stats;
+    setPets([...pets, {...pet}])
+  }
 
   return (
     <div className="nervish">
@@ -27,15 +34,15 @@ export const Nervish = ({pets, setPets, setPage}) => {
           <div className="card-NVSH">
             <div className="buttons-NVSH">
               <div className="left-button-NVSH">
-                <div className="petPage-Adopt overlap-group-2">
-                  <div 
-                  
-                    onClick = {() => { 
-                      setPets([...pets, {...pet}]); 
-                      setPage("Profile");
-                    }}
-                    className="text-wrapper-3">Adopt Pet</div>
-                </div>
+                <AdoptButton pet={pet} pets={pets} setPets={setPets} setPage={setPage} stats={stats}/>
+                {/* <div 
+                  onClick = {() => { 
+                    updatePets(pet);
+                    setPage("Profile");
+                  }}
+                  className="petPage-Adopt overlap-group-2">
+                  <div className="text-wrapper-3">Adopt Pet</div>
+                </div> */}
               </div>
               <div className="right-button-NVSH">
                 <div className="overlap-2">

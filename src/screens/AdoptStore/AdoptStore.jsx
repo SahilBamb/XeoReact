@@ -67,7 +67,8 @@ const availablePets = possiblePets.filter(pet => (pet.available == month % 3));
 const notAvailablePets = possiblePets.filter(pet => (pet.available == (month+1) % 3));
 
 
-export const AdoptStore = ({pets, setPets, setPage}) => {
+export const AdoptStore = ({pets, setPets, setPage, disabled=false}) => {
+  console.log(disabled);
   return (
     <div className="adopt-store">
       <div className="action-card-wrapper">
@@ -101,7 +102,7 @@ export const AdoptStore = ({pets, setPets, setPage}) => {
                     className={divName} 
                     style={divStyle}
                     onClick={() => {
-                      console.log(pet.species + " is not available for adoption!");
+                      // console.log(pet.species + " is not available for adoption!");
                       setPage(pet.species);
                       }}
                     />
@@ -134,7 +135,6 @@ export const AdoptStore = ({pets, setPets, setPage}) => {
                     onClick={() => {
                       console.log(pet.species);
                       // setPets([...pets, {...pet}]);
-                      console.log(pet.species);
                       setPage(pet.species);
                       }}
                     />

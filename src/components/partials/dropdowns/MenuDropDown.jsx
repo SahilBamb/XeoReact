@@ -1,9 +1,11 @@
 import "../../../styles/dropdowns/MenuDropDown.css"
 import '@fortawesome/fontawesome-free/css/all.css'; // For Solid style icons
 import {useState} from "react";
+import { BurgerStore } from "../../../screens/BurgerStore";
 
 export default function MenuDropDown({setPage, setHistoryStack, historyStack}){
     const [menuState, setMenuState] = useState("mdd shrink-position");
+    const [shopState, setShopState] = useState("min");
 
     const expandMenu = () => {
         if(menuState === "mdd shrink-position"){
@@ -11,6 +13,15 @@ export default function MenuDropDown({setPage, setHistoryStack, historyStack}){
         }
         else{
             setMenuState("mdd shrink-position");
+        }
+    }
+
+    const expandShops = () => {
+        if(shopState === "min"){
+            setShopState("max");
+        }
+        else{
+            setShopState("min");
         }
     }
 
@@ -22,7 +33,7 @@ export default function MenuDropDown({setPage, setHistoryStack, historyStack}){
     }
 
     return (
-        <>
+        <div className="MenuDropDown">
             {/* <div className="mdd-horizontal"></div>
             {menuState=="mdd expand-position" && <div className="mdd-divider"> </div>} */}
             <div className={menuState}>
@@ -59,8 +70,28 @@ export default function MenuDropDown({setPage, setHistoryStack, historyStack}){
                 <div className="menu-bar" onClick={() => {changePage("Xeomail");}} >
                     <div className="icon fa-regular fa-envelope" /> xeomail</div>
                 
-                <div className="menu-bar" onClick={() => {changePage("BurgerStore");}} >
-                    <div className="icon fa-solid fa-cart-shopping" /> shops</div>
+                <div className="menu-bar" onClick={() => {expandShops();}} >
+                    <div className="icon fa-solid fa-cart-shopping" /> shops 
+                    {shopState=="min" ? 
+                                    <i className="fa-solid fa-caret-down"></i> : 
+                                    <i className="fa-solid fa-caret-up"></i>}
+                    
+                    </div>
+                    
+                    <div className={shopState}>
+                        <div className="menu-bar shop-bar" onClick={() => {changePage("BurgerStore");} } >
+                            <div className="icon fa-solid fa-burger" /> Burger.Stop</div>
+                    </div>  
+
+                    <div className={shopState}>
+                        <div className="menu-bar shop-bar" onClick={() => {changePage("JobOfficeStore");} } >
+                            <div className="icon fa-solid fa-gavel" /> Justice Lawsuits</div>
+                    </div>      
+
+                    <div className={shopState}>
+                        <div className="menu-bar shop-bar" onClick={() => {changePage("BubbleStore");} } >
+                            <div className="icon fa-solid fa-certificate" /> The Bubble</div>
+                    </div>
                 
                 <div className="inactive-menu menu-bar" onClick={() => {changePage("Xeoboard");}} >
                     <div className="icon fa-solid fa-otter" /> boards</div>
@@ -68,8 +99,8 @@ export default function MenuDropDown({setPage, setHistoryStack, historyStack}){
                 <div className="inactive-menu menu-bar">
                     <div className="icon fa-regular fa-newspaper" /> news</div>
                 
-                <div className="menu-bar" onClick={() => {changePage("Stuff");}}>
-                    <div className="icon fa-solid fa-stroopwafel" /> stuff</div>
+                <div className="menu-bar" onClick={() => {changePage("DevBlog");}}>
+                    <div className="icon fa-solid fa-code" /> dev blog</div>
                     
                 <div className="menu-bar" onClick={() => {changePage("Profile");}}>
                     <div className="icon fa-solid fa-clipboard-question" /> profile</div>
@@ -82,7 +113,7 @@ export default function MenuDropDown({setPage, setHistoryStack, historyStack}){
                     logout
                 </div> */}
             </div>
-        </>
+        </div>
     );
 
 }

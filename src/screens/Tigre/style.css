@@ -1,0 +1,157 @@
+.tigre {
+  background: linear-gradient(180deg, rgb(163, 49, 17) 0%, rgb(245, 177, 100) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tigre .overlap-group-wrapper {
+  height: 982px;
+  overflow: hidden;
+  width: 1512px;
+}
+
+.tigre .overlap-3 {
+  height: 989px;
+  position: relative;
+  top: -7px;
+  width: 1555px;
+}
+
+.tigre .main-rectangle-card {
+  height: 950px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 39px;
+  width: 1512px;
+}
+
+.tigre .card-TGRE {
+  height: 709px;
+  left: 208px;
+  position: absolute;
+  top: 197px;
+  width: 1068px;
+}
+
+.tigre .buttons-TRTL {
+  height: 48px;
+  left: 438px;
+  position: absolute;
+  top: 661px;
+  width: 634px;
+}
+
+.tigre .div-wrapper {
+  border: 2px solid;
+  border-color: #ffffff;
+  border-radius: 20px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 211px;
+}
+
+.tigre .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Source Sans Pro", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 63px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.tigre .view-variants-wrapper {
+  background-color: #fb8e32;
+  border-radius: 20px;
+  height: 48px;
+  left: 238px;
+  position: absolute;
+  top: 0;
+  width: 392px;
+}
+
+.tigre .view-variants {
+  height: 14px;
+  left: 142px;
+  position: absolute;
+  top: 17px;
+  width: 111px;
+}
+
+.tigre .overlap-4 {
+  height: 204px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 282px;
+}
+
+.tigre .header {
+  background-color: transparent;
+  height: 204px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 282px;
+}
+
+.tigre .p {
+  color: #ffffff;
+  font-family: "McLaren", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 120px;
+  width: 278px;
+}
+
+.tigre .main-heading-text {
+  color: #ffffff;
+  font-family: "Metropolis-Black", Helvetica;
+  font-size: 50px;
+  font-weight: 900;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 278px;
+}
+
+.tigre .line {
+  height: 3px;
+  left: 2px;
+  position: absolute;
+  top: 189px;
+  width: 253px;
+}
+
+.tigre .stats-screen-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 216px !important;
+}
+
+.tigre .design-component-instance-node {
+  background-color: #fa8e32 !important;
+}
+
+.tigre .tigre-img {
+  height: 800px;
+  left: 605px;
+  object-fit: cover;
+  position: absolute;
+  top: 50px;
+  width: 950px;
+}

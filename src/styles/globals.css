@@ -7,7 +7,6 @@
   src: url('./fonts/adigianaultra.ttf');
 }
 
-
 @font-face {
   font-family: "DogicaPixel";
   src: url('./fonts/dogicapixel.ttf');
@@ -24,6 +23,7 @@ src: url('./fonts/MaplestoryBold.ttf');
   font-weight: 400;
   src: url("static/fonts/Minecraftia-Regular.woff") format("woff");
 }
+
 @font-face {
   font-family: "Arial-Regular";
   font-style: normal;

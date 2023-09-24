@@ -18,6 +18,7 @@ import { Birbeak } from "./screens/Birbeak";
 import { Draco } from "./screens/Draco";
 import { Turt } from "./screens/Turt";
 import { Bumble } from "./screens/Bumble";
+import { Tigre } from "./screens/Tigre";
 
 import { Inventory } from "./screens/Inventory";
 import { OceanScenePage } from "./screens/OceanScenePage";
@@ -29,11 +30,12 @@ import { JobOfficeStore } from "./screens/JobOfficeStore";
 import { SpacePlace } from "./screens/SpacePlace/Index";
 import { FighterGambling } from "./screens/FighterGambling";
 import { Grid } from "./screens/Grid";
-
 import { Stuff } from "./screens/Stuff";
+import { DevBlog } from "./screens/DevBlog";
+
 
 function App() {
-  const [page, setPage] = useState("Adopt")
+  const [page, setPage] = useState("DevBlog")
   const [items, setItems] = useState([]);
   const [pets, setPets] = useState([]);
   const [menuState, setMenuState] = useState("mdd expand-position");
@@ -50,7 +52,7 @@ function App() {
       {/* <PageTitle title={uPage} subTitle={page} color={"lightblue"}/> */}
       {/* {(Math.floor(Math.random() * 100) > 90) && <RandomEvent/> } */}
 
-      {page === "Stuff" && <Stuff/>}
+      {page === "DevBlog" && <DevBlog/>}
 
       {page === "Grid" && <Grid setPage={setPage} items={items} setItems={setItems}/>}
 {/* 
@@ -70,6 +72,7 @@ function App() {
       {page === "Draco" && <Draco pets={pets} setPets={setPets} setPage={setPage}/>}
       {page === "Turt" && <Turt pets={pets} setPets={setPets} setPage={setPage}/>}
       {page === "Bumble" && <Bumble pets={pets} setPets={setPets} setPage={setPage}/>}
+      {page === "Tigre" && <Tigre pets={pets} setPets={setPets} setPage={setPage}/>}
       
       {page === "Xeoboard" && <Xeoboard/>} 
       {page === "Adopt" && <AdoptStore pets={pets} setPets = {setPets} setPage = {setPage}/>}

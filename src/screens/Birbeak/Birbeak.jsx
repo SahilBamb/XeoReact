@@ -2,13 +2,15 @@ import React from "react";
 import {useState} from "react";
 import "./style.css";
 import Stats from "./../partials/StatsScreen/Stats";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Birbeak = ({pets, setPets, setPage}) => {
 
   const pet = {
     species : "Birbeak",
     color : "Vanilla",
-    available : true
+    available : true,
+    statsList : {}
   };
 
   const [stats, setStats] = useState({
@@ -19,6 +21,10 @@ export const Birbeak = ({pets, setPets, setPage}) => {
     socialness: 3,
   });
 
+  function updatePets(pet) {
+    pet.statsList = stats;
+    setPets([...pets, {...pet}])
+  }
 
   return (
     <div className="birbeak">
@@ -27,14 +33,15 @@ export const Birbeak = ({pets, setPets, setPage}) => {
           <div className="card-BRBK">
             <div className="buttons-BRBK">
               <div className="left-button-BRBK">
-                <div className="petPage-Adopt overlap-group-9">
+                {/* <div className="petPage-Adopt overlap-group-9">
                   <div 
                     onClick = {() => { 
-                      setPets([...pets, {...pet}]); 
+                      updatePets(pet);
                       setPage("Profile");
                     }}
                     className="text-wrapper-32">Adopt Pet</div>
-                </div>
+                </div> */}
+                <AdoptButton pet={pet} pets={pets} setPets={setPets} setPage={setPage} stats={stats}/>
               </div>
               <div className="right-button-BRBK">
                 <div className="img-wrapper">

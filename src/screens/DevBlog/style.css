@@ -1,0 +1,271 @@
+@import "../../styles/globals.css";
+
+.dev-blog {
+  background: linear-gradient(180deg, rgb(117, 235, 249) 10.74%, rgb(64, 105, 225) 45.83%, rgb(26, 37, 90) 70.18%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.dev-blog .overlap-wrapper {
+  background: linear-gradient(180deg, rgb(69, 126, 252) 0%, rgba(27, 37, 88, 0.22) 20%);
+  height: 982px;
+  width: 1512px;
+}
+
+.dev-blog .overlap {
+  
+  height: 976px;
+  left: 9px;
+  position: relative;
+  top: 6px;
+  width: 1503px;
+}
+
+.dev-blog .main-card {
+  height: 637px;
+  left: 301px;
+  position: absolute;
+  top: 6px;
+  width: 847px;
+}
+
+.dev-blog .tech-stack {
+  height: 289px;
+  left: 357px;
+  position: absolute;
+  top: 565px;
+  width: 815px;
+}
+
+.dev-blog .docker-group {
+  height: 138px;
+  left: 709px;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .overlap-group {
+  border-radius: 15px;
+  height: 138px;
+  position: relative;
+  width: 104px;
+}
+
+.dev-blog .text-wrapper {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 96px;
+  width: 67px;
+}
+
+.dev-blog .rectangle {
+  border-color: #ffffff;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-radius: 15px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  height: 138px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 104px;
+}
+
+.dev-blog .docker-icon {
+  height: 53px;
+  left: 17px;
+  position: absolute;
+  top: 30px;
+  width: 76px;
+}
+
+.dev-blog .react-group {
+  height: 138px;
+  left: 591px;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .react-icon {
+  height: 64px;
+  left: 19px;
+  position: absolute;
+  top: 22px;
+  width: 73px;
+}
+
+.dev-blog .figma-group {
+  height: 138px;
+  left: 473px;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .figma-icon {
+  height: 67px;
+  left: 32px;
+  position: absolute;
+  top: 22px;
+  width: 45px;
+}
+
+.dev-blog .node-group {
+  height: 138px;
+  left: 355px;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .node-icon {
+  height: 49px;
+  left: 13px;
+  position: absolute;
+  top: 32px;
+  width: 80px;
+}
+
+.dev-blog .javascript-group {
+  height: 138px;
+  left: 237px;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .java-script {
+  height: 53px;
+  left: 26px;
+  position: absolute;
+  top: 26px;
+  width: 53px;
+}
+
+.dev-blog .group {
+  height: 138px;
+  left: 119px;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .div {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 37px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.dev-blog .icon {
+  height: 62px;
+  left: 26px;
+  position: absolute;
+  top: 26px;
+  width: 53px;
+}
+
+.dev-blog .html-group {
+  height: 138px;
+  left: 0;
+  position: absolute;
+  top: 151px;
+  width: 106px;
+}
+
+.dev-blog .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Raleway", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.dev-blog .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "MaplestoryBold", Helvetica;
+  font-size: 70px;
+  font-weight: 400;
+  left: 284px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 503px;
+}
+
+.dev-blog .top-title {
+  height: 40px;
+  left: 401px;
+  position: absolute;
+  top: 16px;
+  width: 737px;
+}
+
+.dev-blog .overlap-2 {
+  height: 40px;
+  position: relative;
+  width: 733px;
+}
+
+.dev-blog .p {
+  color: #ffffff;
+  font-family: "MaplestoryBold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 129px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 8px;
+  width: 604px;
+}
+
+.dev-blog .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "MaplestoryBold", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 604px;
+}
+
+.dev-blog .sahil-pixar-avatar {
+  height: 611px;
+  left: 407px;
+  object-fit: cover;
+  position: absolute;
+  top: 96px;
+  width: 206px;
+}

@@ -2,12 +2,15 @@ import React from "react";
 import {useState} from "react";
 import "./style.css";
 import Stats from "./../partials/StatsScreen/Stats";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Bumble = ({pets, setPets, setPage}) => {
 
   const pet = {species : "Bumble",
                 color : "Vanilla",
-                available : true};
+                available : true,
+                statsList : {}
+              };
 
   const [stats, setStats] = useState({
       fitness: 3,
@@ -17,20 +20,26 @@ export const Bumble = ({pets, setPets, setPage}) => {
       socialness: 3,
     });
 
+  function updatePets(pet) {
+      pet.statsList = stats;
+      setPets([...pets, {...pet}])
+    }
+
   return (
     <div className="bumble">
       <div className="overlap-wrapper-8">
         <div className="overlap-32">
           <div className="card-TRTL-2">
             <div className="buttons-TRTL-2">
-              <div 
+              <AdoptButton pet={pet} pets={pets} setPets={setPets} setPage={setPage} stats={stats}/>
+              {/* <div 
                 onClick = {() => { 
-                  setPets([...pets, {...pet}]); 
+                  updatePets(pet);
                   setPage("Profile");
                 }}
                 className="petPage-Adopt overlap-33">
                 <div className="text-wrapper-57">Adopt Pet</div>
-              </div>
+              </div> */}
               <div className="overlap-group-16">
                 <img className="view-variants-5" alt="View variants" src="/img/view-variants.png" />
               </div>

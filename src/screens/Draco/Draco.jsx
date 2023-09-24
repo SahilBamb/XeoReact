@@ -2,13 +2,15 @@ import React from "react";
 import {useState} from "react";
 import Stats from "../partials/StatsScreen/Stats";
 import "./style.css";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Draco = ({pets, setPets, setPage}) => {
 
   const pet = {
     species : "Draco",
     color : "Vanilla",
-    available : true
+    available : true,
+    statsList : {}
   };
 
   const [stats, setStats] = useState({
@@ -19,25 +21,25 @@ export const Draco = ({pets, setPets, setPage}) => {
     socialness: 3,
   });
 
+
   return (
     <div className="draco">
       <div className="overlap-wrapper-6">
         <div className="overlap-19">
           <img className="main-rectangle-card-2" alt="Main rectangle card" src="/img/main-rectangle-card-drk.png" />
           <div className="card-DRK">
-            <div 
-              className="buttons-DRK">
-              <div 
+            <div className="buttons-DRK">
+              {/* <div 
                 onClick = {() => { 
-                  console.log("Clicking Dragon Adopt");
-                  setPets([...pets, {...pet}]); 
+                  updatePets(pet);
                   setPage("Profile");
                 }}
                 className="left-button-DRK">
                 <div className="petPage-Adopt overlap-group-11">
                   <div className="text-wrapper-39">Adopt Pet</div>
                 </div>
-              </div>
+              </div> */}
+              <AdoptButton pet={pet} pets={pets} setPets={setPets} setPage={setPage} stats={stats}/>
               <div className="right-button-DRK">
                 <div className="overlap-20">
                   <img className="view-variants-3" alt="View variants" src="/img/view-variants.png" />

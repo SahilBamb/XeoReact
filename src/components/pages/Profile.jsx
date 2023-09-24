@@ -13,14 +13,25 @@ export default function Profile({items, setItems, pets, setPets, setPage}){
         }
     }
 
-    const preStat = [
-        setStat("STR", 1, "#F5E9B3"),
-        setStat("DEX", 2, "#7CFFAF"),
-        setStat("CONST", 3, "#71CFE8"),
-        setStat("INTL", 4, "#8989FF"),
-        setStat("WSDM", 5, "#DA9BE8"),
-        setStat("CHAR", 6, "#FFBFBC")
-    ];
+    function createStats(pet) {
+        console.log(pet.statsList.fitness);
+        let FIT = pet.statsList.fitness;
+        let SOCL = pet.statsList.socialness;
+        let GDNS = pet.statsList.goodness;
+        let ADVN = pet.statsList.adventurousness;
+        let HPNS = pet.statsList.happiness;
+
+        const preStat = [
+            setStat("FIT", FIT, "#F5E9B3"),
+            setStat("SOCL", SOCL, "#7CFFAF"),
+            setStat("GDNS", GDNS, "#71CFE8"),
+            setStat("ADVN", ADVN, "#8989FF"),
+            setStat("HPNS", HPNS, "#DA9BE8"),
+        ];
+
+        return preStat;
+    }
+
 
     const [activeItem, setActiveItem] = useState(null);
     
@@ -50,7 +61,7 @@ export default function Profile({items, setItems, pets, setPets, setPage}){
                     <div className="pet-rack">
                     {pets.map((pet, i) => {
                             return <Pet
-                                stats={preStat}
+                                stats={createStats(pet)}
                                 onClick={useItem} 
                                 idx={i}
                                 colorPaint={items[activeItem]?.details}

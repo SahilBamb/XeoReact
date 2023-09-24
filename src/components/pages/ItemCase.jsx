@@ -3,14 +3,14 @@ import {rarities} from '../pages/config.js';
 import "../../styles/ItemCase.css";
 import itemDetails from '../pages/itemDetails.jsx';
 
-export default function ItemCase({items, setItems, setPage, posStoreInventory}) {
+export default function ItemCase({items, setItems, setPage, posStoreInventory, totalItems=12}) {
     
     const refreshInventory = () => { 
         if (loadingDots.visibility === "visible") return;
         setLoadingDots({visibility: "visible"});
         setTimeout(function() {
             let si = [...posStoreInventory.filter((e) => Math.random() < (1/(5**(e.rarity-1))))];
-            while (si.length < 12){ si.push({}); }
+            while (si.length < totalItems){ si.push({}); }
             setsStoreInventory(si);
             setLoadingDots({visibility: "hidden"});
         }, 800);
@@ -18,7 +18,7 @@ export default function ItemCase({items, setItems, setPage, posStoreInventory}) 
     
     let si = [...posStoreInventory.filter((e) => Math.random() < (1/(5**(e.rarity-1))) )];
     
-    while (si.length < 12){ si.push({}); }
+    while (si.length < totalItems){ si.push({}); }
 
     const [storeInventory, setsStoreInventory] = useState(si);
     const [loadingDots, setLoadingDots] = useState({visibility: "hidden"});
@@ -38,7 +38,6 @@ export default function ItemCase({items, setItems, setPage, posStoreInventory}) 
     return (
         <content className="ep-container">
             <div className="ep-map">
-                
                 <div className="ep-item-case">
                     <div className={loadingDots.visibility==="hidden" ? "refresh-button" : "refresh-button spinning"} onClick={refreshInventory}>
                         <i class="fa fa-refresh refresh-text" aria-hidden="true"></i>
@@ -60,16 +59,8 @@ export default function ItemCase({items, setItems, setPage, posStoreInventory}) 
                                 style={style}
                                 className={"box"}>
                                     {(Object.keys(e).length !== 0) && 
-                                    
-                                    
-                                    <div className="price-tag">$0</div>
-
-                                    
+                                        <div className="price-tag">$0</div>
                                     }
-
-                                    
-
-                                    
                             </div>
                                 );
                     })};

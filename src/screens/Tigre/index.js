@@ -1,0 +1,1 @@
+export { Tigre } from "./Tigre";

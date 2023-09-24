@@ -1,6 +1,6 @@
 .AdoptButton {
-
 }
+
 
 .AdoptButton .left-button-PNDO {
   height: 48px;
@@ -20,7 +20,6 @@
   width: 211px;
 }
 
-
 .AdoptButton .text-wrapper-25 {
   user-select: none;
   color: inherit;
@@ -37,4 +36,9 @@
 
 .AdoptButton .petPage-Adopt:hover {
   transform: scale(1.1);
+}
+
+.AdoptButton .disabled {
+  opacity: 0.2;
+  pointer-events: none;
 }

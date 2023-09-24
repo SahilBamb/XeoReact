@@ -2,13 +2,15 @@ import React from "react";
 import {useState} from "react";
 import "./style.css";
 import Stats from "./../partials/StatsScreen/Stats";
+import AdoptButton from "./../partials/AdoptButton/AdoptButton";
 
 export const Sharktooth = ({pets, setPets, setPage}) => {
 
   const pet = {
         species : "Razortooth",
         color : "Vanilla",
-        available : true
+        available : true,
+        statsList : {}
       };
 
   const [stats, setStats] = useState({
@@ -19,6 +21,11 @@ export const Sharktooth = ({pets, setPets, setPage}) => {
     socialness: 3,
   });
 
+  function updatePets(pet) {
+    pet.statsList = stats;
+    setPets([...pets, {...pet}])
+  }
+
   return (
     <div className="sharktooth">
       <div className="overlap-wrapper-2">
@@ -26,16 +33,17 @@ export const Sharktooth = ({pets, setPets, setPage}) => {
           <img className="img" alt="Main rectangle card" src="/img/main-rectangle-card-shrk.png" />
           <div className="card-SHRK">
             <div className="buttons-SHRK">
-              <div className="left-button-NVSH-2">
+              {/* <div className="left-button-NVSH-2">
                 <div 
                   onClick = {() => { 
-                    setPets([...pets, {...pet}]); 
+                    updatePets(pet); 
                     setPage("Profile");
                   }}
                   className="petPage-Adopt overlap-group-4">
                   <div className="text-wrapper-10">Adopt Pet</div>
                 </div>
-              </div>
+              </div> */}
+              <AdoptButton pet={pet} pets={pets} setPets={setPets} setPage={setPage} stats={stats}/>
               <div className="right-button-NVSH-2">
                 <div className="overlap-7">
                   <div className="text-wrapper-11">View Variants</div>

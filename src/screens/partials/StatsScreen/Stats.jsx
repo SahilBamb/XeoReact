@@ -45,16 +45,15 @@ export default function Stats({buttonColor = "#FFC700", stats, setStats}) {
             }
         }
 
-        console.log(rSum);
-
         // shuffleArray(temp);
         
         setStats({
             fitness: temp[0],
-            happiness: temp[1],
+            socialness: temp[1],
             goodness: temp[2],
             adventurousness: temp[3],
-            friendliness: temp[4],
+            happiness: temp[4],
+            xFactor: temp[4]
         });
     }
 
