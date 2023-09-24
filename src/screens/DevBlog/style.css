@@ -269,3 +269,12 @@
   top: 96px;
   width: 206px;
 }
+
+.dev-blog .sahiltopbody {
+  height: 360px;
+  left: 350px;
+  object-fit: cover;
+  position: absolute;
+  top: 128px;
+  width: 360px;
+}

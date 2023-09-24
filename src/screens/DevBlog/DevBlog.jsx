@@ -65,7 +65,7 @@ export const DevBlog = () => {
               <div className="text-wrapper-4">Dev Blog</div>
             </div>
           </div>
-          <img className="sahil-pixar-avatar" alt="Sahil pixar avatar" src="/img/sahil-pixar-avatar.png" />
+          <img className="sahiltopbody" alt="Sahiltopbody" src="/img/sahiltopbody-1.png" />
         </div>
       </div>
     </div>
