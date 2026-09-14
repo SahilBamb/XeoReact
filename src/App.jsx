@@ -27,7 +27,7 @@ import { AdoptStore } from "./screens/AdoptStore";
 import { BubbleStore } from "./screens/BubbleStore";
 import { BurgerStore } from "./screens/BurgerStore";
 import { JobOfficeStore } from "./screens/JobOfficeStore";
-import { SpacePlace } from "./screens/SpacePlace/Index";
+import { SpacePlace } from "./screens/SpacePlace";
 import { FighterGambling } from "./screens/FighterGambling";
 import { Grid } from "./screens/Grid";
 import { Stuff } from "./screens/Stuff";
